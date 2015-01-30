@@ -1,9 +1,20 @@
 <head>
-    <title>main.html</title>
+    <title>main_page.html</title>
 </head>
 <template name="mainPage" >
    <div class="container">
+       <h3>main_page.html</h3>
     <h4>Toutes les agences</h4>
-{{> toutesLesAgences}}
+{{> agencesList}}
    </div>
+
+    <div class="container">
+    <h4>Listes des agences inversées</h4>
+    {{> agencesListInv}}
+    </div>
+
+    <div class="container">
+        <h4>Toutes les agences</h4>
+        {{> toutesLesAgences}}
+    </div>
 </template>

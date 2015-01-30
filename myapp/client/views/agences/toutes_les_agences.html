@@ -1,0 +1,16 @@
+<Template name="toutesLesAgences">
+     <ul>
+         {{#each agences}}
+       <li> {{raisonSocialeAgence}}
+    {{type}}
+    {{# if adresse}}
+        {{adresse}}
+    {{else}}
+        <a href="{{pathFor 'agenceItem'}}">Adresse à completer</a>
+
+    {{/if}}
+    {{ville}}
+       </li>
+         {{/each}}
+     </ul>
+</Template>

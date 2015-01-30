@@ -17,7 +17,7 @@ Template.agencesListInv.helpers({
 
 Template.toutesLesAgences.helpers({
     agences : function () {
-        return Agences.find();
+        return Agences.find({});
 
     }
 });
