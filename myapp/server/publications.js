@@ -1,8 +1,8 @@
-Meteor.publish('agences', function() {
-    return Agences.find();
+Meteor.publish('agences', function(Agence01) {
+    return Agences.find({raisonSocialeAgence: 'Agence01'});
 });
 
 
-Meteor.publish('groupes', function() {
-    return Groupes.find();
+Meteor.publish('groupes', function(Immo03) {
+    return Groupes.find({raisonSociale: 'Immo03'});
 });
