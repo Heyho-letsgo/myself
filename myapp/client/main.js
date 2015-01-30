@@ -1,2 +1,3 @@
-Meteor.subscribe('agences');
-Meteor.subscribe('groupes');
+Meteor.subscribe('groupes','GroupeImmo03');
+Meteor.subscribe('agences','agence');
+Meteor.subscribe('toutesLesAgences');

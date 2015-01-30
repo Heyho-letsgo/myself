@@ -1,3 +1,20 @@
 <Template name="agenceItem">
     {{raisonSocialeAgence}}   {{adresse}}
 </Template>
+
+
+<Template name="agenceItemLong">
+    {{raisonSocialeAgence}}   {{adresse}} {{ville}}
+</Template>
+
+<Template name="toutesAgences">
+    {{raisonSocialeAgence}}
+    {{type}}
+        {{# if adresse}}
+    {{adresse}}
+            {{else}}
+            <a href="#">Adresse à completer</a>
+
+        {{/if}}
+    {{ville}}
+</Template>

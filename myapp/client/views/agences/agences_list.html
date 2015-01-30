@@ -1,17 +1,25 @@
 <Template name="agencesList">
 <ul>
         {{#each agences}}
-        <li>     {{> agenceItem}}</li>
+        <li>     {{> agenceItemLong}}</li>
         {{/each}}
     </ul>
 </Template>
 
 <Template name="agencesListInv">
-<ul>
+    <ul>
         {{#each agences}}
-        <li>     {{> agenceItem}}</li>
+            <li>     {{> agenceItem}}</li>
         {{/each}}
     </ul>
 </Template>
 
+
+<Template name="toutesLesAgences">
+    <ul>
+        {{#each agences}}
+            <li>     {{> toutesAgences}}</li>
+        {{/each}}
+    </ul>
+</Template>
 
