@@ -1,0 +1,8 @@
+
+<template name="groupesList"> 
+<ul>
+{{#each }}
+<li>{{> groupeItem}}</li>
+{{/each}}
+</ul>
+</template>
