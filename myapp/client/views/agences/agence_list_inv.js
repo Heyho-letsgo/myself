@@ -3,7 +3,7 @@
  */
 Template.agencesListInv.helpers({
     agences : function () {
-        return Agences.find({adresse: '48 rue des Moines'},
+        return Agences.find({adresse: {$ne : " " }},
             {sort: {raisonSocialeAgence: 1}, limit: 5
             });
     }

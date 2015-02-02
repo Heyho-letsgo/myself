@@ -1,25 +1,28 @@
-
 <template name="rassemblement">
-<div class="container">
-    <h3>rassemblement.html</h3>
-    <h4>Liste des Groupes</h4>
-    <div class="row">
-        {{> groupesList}}
-    </div>
-    <h4>Liste des Agences</h4>
-    <div class="row">
-            {{> agencesList}}
+    <div class="container-fluid">
+        <h3>rassemblement.html</h3>
+
+        <div class="row">
+            <div class="col-md-3">
+                  <h4>Liste des Groupes</h4>
+                    {{> groupesList}}
+            </div>
+            <div class="col-md-3">
+                <h4>Liste des Agences</h4>
+                 {{> agencesList}}
+            </div>
+
+            <div class="col-md-3">
+            <h4>Liste des AgencesInversées ayant une adresse.</h4>
+                {{> agencesListInv}}
+            </div>
+
+             <div class="col-md-3">
+            <h4>Toutes les agences</h4>
+                {{> toutesLesAgences}}
+            </div>
+        </div>
     </div>
 
-    <h4>Liste des AgencesInversées ayant une adresse.</h4>
-    <div class="row">
-        {{> agencesListInv}}
-    </div>
-
-    <h4>Toutes les agences</h4>
-    <div class="row">
-        {{> toutesLesAgences}}
-    </div>
-</div>
 </template>
 

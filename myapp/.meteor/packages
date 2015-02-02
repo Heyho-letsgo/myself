@@ -8,3 +8,4 @@ meteor-platform
 mizzao:bootstrap-3
 iron:router
 mizzao:jquery-ui
+accounts-password

@@ -6,7 +6,6 @@ Template.agenceEdit.events({
         e.preventDefault();
 
         var currentAgenceId = this._id;
-
         var agenceProperties = {
             raisonSocialeAgence: $(e.target).find('[name=raisonSocialeAgence]').val(),
             ville: $(e.target).find('[name=ville]').val(),
