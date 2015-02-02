@@ -16,7 +16,12 @@ Router.map(function(){
             return Agences.findOne(this.params._id);
         }
     });
-    //this.route('mainPage', {path: '/'});
+    this.route('agenceEdit',{
+        path: 'toutesLesagences/:_id/edit',
+        data: function () {
+            return Agences.findOne(this.params._id);
+        }
+    });
     this.route('agenceSubmit', {path: '/agenceSubmit'});
     this.route('toutesLesAgences', {path: '/toutesLesAgences'});
     this.route('rassemblement', {path: '/rassemblement'});

@@ -4,15 +4,9 @@
 <template name="mainPage" >
    <div class="container">
        <h3>main_page.html</h3>
-    <h4>Toutes les agences</h4>
-{{> agencesList}}
-   </div>
+       <a href="{{pathFor 'agenceSubmit'}}">New</a>
 
-    <div class="container">
-    <h4>Listes des agences inversées</h4>
-    {{> agencesListInv}}
-    </div>
-
+</div>
     <div class="container">
         <h4>Toutes les agences</h4>
         {{> toutesLesAgences}}

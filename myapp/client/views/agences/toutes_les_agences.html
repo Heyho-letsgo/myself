@@ -6,12 +6,11 @@
     {{# if adresse}}
         {{adresse}}
     {{else}}
-        <a href="{{pathFor 'agenceItem'}}">Adresse à completer</a>
+        <a href="{{pathFor 'agenceEdit'}}">Adresse à completer</a>
 
     {{/if}}
     {{ville}}
        </li>
          {{/each}}
      </ul>
-    <a href="{{pathFor 'agenceSubmit'}}">New</a>
-</Template>
+    </Template>
