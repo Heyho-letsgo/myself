@@ -6,18 +6,6 @@ Template.agencesList.helpers({
     }
 });
 
-Template.agencesListInv.helpers({
-    agences : function () {
-        return Agences.find({adresse: '48 rue des Moines'},
-            {sort: {raisonSocialeAgence: 1}, limit: 5
-                });
-    }
-});
 
 
-Template.toutesLesAgences.helpers({
-    agences : function () {
-        return Agences.find({});
 
-    }
-});

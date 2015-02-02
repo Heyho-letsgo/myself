@@ -1,5 +1,9 @@
 <Template name="agenceItem">
-    {{raisonSocialeAgence}}   {{adresse}}
+    <a href="{{pathFor 'agenceItem'}}">{{raisonSocialeAgence}}</a>
+    <br>{{adresse}}
 </Template>
 
 
+<Template name="agenceItemEnLigne">
+    <a href="{{pathFor 'agenceItem'}}">{{raisonSocialeAgence}}</a> {{adresse}}
+</Template>

@@ -1,0 +1,4 @@
+Template.mainPage.helpers({
+
+
+});
