@@ -1,18 +1,18 @@
 <Template name="toutesLesAgences">
-     <ul>
-         {{#each agences}}
-       <li> {{raisonSocialeAgence}}
-    {{type}}
-    {{# if adresse}}
-        {{adresse}}
-    {{else}}
-        <a href="{{pathFor 'agenceEdit'}}">Adresse à completer</a>
+    <ul>
+        {{#each agences}}
+            <li> {{raisonSocialeAgence}}
+                {{type}}
+                {{# if adresse}}
+                    {{adresse}}
+                {{else}}
+                    <a href="{{pathFor 'agenceEdit'}}">Adresse à completer</a>
 
-    {{/if}}
-    {{ville}}
-           {{ref}}
-           <a href="{{pathFor 'agenceEdit'}}">Edit</a>
-       </li>
-         {{/each}}
-     </ul>
-    </Template>
+                {{/if}}
+                {{ville}}
+                {{ref}}
+                <a href="{{pathFor 'agenceEdit'}}">Edit</a>
+            </li>
+        {{/each}}
+    </ul>
+</Template>

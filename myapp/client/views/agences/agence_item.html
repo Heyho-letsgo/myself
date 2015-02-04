@@ -1,22 +1,15 @@
 <Template name="agenceItem">
-    template agenceItem<br>
-    <div class="container.fluid">
-        <div class="row">
             {{raisonSocialeAgence}}
             <br>{{adresse}}
             <br>{{type}}
             <br>{{ville}}
-        </div>
 
-    </div>
     <a href={{pathFor 'agenceEdit'}}>Editer</a>
 </Template>
 
 
 <Template name="agenceItemEnLigne">
-    <div class="container.fluid">
-        <div class="row">
-    <a href="{{pathFor 'agenceItem'}}">{{raisonSocialeAgence}}</a> {{adresse}}
-            </div>
-        </div>
-    </Template>
+
+            <a href="{{pathFor 'agenceItem'}}">{{raisonSocialeAgence}}</a> {{adresse}}
+
+</Template>

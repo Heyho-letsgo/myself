@@ -12,7 +12,7 @@ Template.agenceSubmit.events({
             ville: $(e.target).find('[name=ville]').val(),
             type: $(e.target).find('[name=type]').val(),
             adresse: $(e.target).find('[name=adresse]').val(),
-            ref: ref+=1
+            ref: ref += 1
         };
 
         agence._id = Agences.insert(agence);
