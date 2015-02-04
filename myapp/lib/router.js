@@ -24,6 +24,7 @@ Router.map(function(){
     });
     this.route('agenceSubmit', {path: '/agenceSubmit'});
     this.route('toutesLesAgences', {path: '/toutesLesAgences'});
+    this.route('groupesList', {path: '/tousLesGroupes'});
     this.route('rassemblement', {path: '/rassemblement'});
 
 });

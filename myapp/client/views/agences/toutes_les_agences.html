@@ -1,4 +1,6 @@
 <Template name="toutesLesAgences">
+    <div class="container">
+    <h1>Il y a: {{ agencesTotal }} agences</h1>
     <ul>
         {{#each agences}}
             <li> {{raisonSocialeAgence}}
@@ -15,5 +17,5 @@
             </li>
         {{/each}}
     </ul>
-    <h1>Il y a: {{ agencesTotal }} agences</h1>
+</div>
 </Template>

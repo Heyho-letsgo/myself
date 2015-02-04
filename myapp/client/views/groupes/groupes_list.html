@@ -1,12 +1,16 @@
 <Template name="groupesList">
-    <ul>
-        {{#each groupes}}
-            <li>{{> groupeItem}}</li>
-        {{/each}}
-    </ul>
+<div class="container">
+
     {{# if totalGroupe 1  }}
     <h3>Il y a {{totalGroupe}} groupe.</h3>
     {{else }}
     <h3>Il y a {{totalGroupe}} groupes.</h3>
     {{/if}}
+    <ul>
+        {{#each groupes}}
+            <li>{{> groupeItem}}</li>
+        {{/each}}
+    </ul>
+</div>
 </Template>
+
