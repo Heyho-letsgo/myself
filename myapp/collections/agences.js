@@ -3,6 +3,6 @@ Agences = new Meteor.Collection('agences');
 
 
 Agences.allow({
-    insert: function(raisonSocialeAgence,ville,type,adresse ){return true;},
-    update: function(raisonSocialeAgence,ville,type,adresse ){return true}
+    insert: function(userId, doc ){return !! userId;},
+    update: function(userId, doc ){return !! userId}
     });

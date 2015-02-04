@@ -29,3 +29,14 @@ Router.map(function(){
 
 });
 
+
+var requireLogin = function() {
+  if (! Meteor.user()) {
+    this.render('accessDenied');
+  } else {
+    this.next();
+  }
+}
+
+
+Router.onBeforeAction(requireLogin, {only: 'agenceEdit'});
