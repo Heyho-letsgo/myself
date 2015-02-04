@@ -4,4 +4,9 @@
             <li>{{> groupeItem}}</li>
         {{/each}}
     </ul>
+    {{# if totalGroupe 1  }}
+    <h3>Il y a {{totalGroupe}} groupe.</h3>
+    {{else }}
+    <h3>Il y a {{totalGroupe}} groupes.</h3>
+    {{/if}}
 </Template>

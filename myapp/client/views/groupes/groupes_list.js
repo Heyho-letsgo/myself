@@ -4,3 +4,11 @@ Template.groupesList.helpers({
         return Groupes.find();
     }
 });
+
+
+
+Template.groupesList.helpers({
+    totalGroupe : function() {
+        return Groupes.find().count();
+}
+    });

@@ -7,3 +7,9 @@ Template.toutesLesAgences.helpers({
 
     }
 });
+
+Template.toutesLesAgences.helpers({
+    agencesTotal: function () {
+        return Agences.find().count();
+}
+});
