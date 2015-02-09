@@ -14,7 +14,8 @@
             <li class="active"><a href="{{pathFor 'toutesLesAgences'}}">Toutes les agences</a></li>
             <li class="active"><a href="{{pathFor 'groupesList'}}">Tous les groupes</a></li>
             <li class="active"><a href="{{pathFor 'rassemblement'}}">Rassemblement</a></li>
-         </ul>
+            {{# if currentUser}}<li class="active"><a href="{{pathFor 'rassemblement'}}">Lien actif si currentUser</a></li>{{/if}}
+        </ul>
         <ul class="nav navbar-nav navbar-right">
             {{> loginButtons}} <!-- here -->
         </ul>

@@ -4,6 +4,7 @@
 
 
 Template.accueil.helpers({
-
-
+    username: function () {
+        return Meteor.user() && Meteor.user().username;
+    }
 });

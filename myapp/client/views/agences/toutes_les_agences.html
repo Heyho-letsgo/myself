@@ -1,21 +1,31 @@
 <Template name="toutesLesAgences">
-    <div class="container">
-    <h1>Il y a: {{ agencesTotal }} agences</h1>
-    <ul>
-        {{#each agences}}
-            <li> {{raisonSocialeAgence}}
-                {{type}}
-                {{# if adresse}}
-                    {{adresse}}
-                {{else}}
-                    <a href="{{pathFor 'agenceEdit'}}">Adresse à completer</a>
 
-                {{/if}}
-                {{ville}}
-                {{ref}}
-                <a href="{{pathFor 'agenceEdit'}}">Edit</a>
-            </li>
-        {{/each}}
-    </ul>
-</div>
-</Template>
+        {{#if currentUser}}
+            <h1>{{currentUser.username}} a: {{ agencesTotalParUttilisateur }} sur {{agencesTotal}} agences</h1>
+
+
+            <a href="{{pathFor 'agenceSubmit'}}">Nouvelle agence</a>
+
+                             <ul>
+                        {{#each agencesParUtilisateur}}
+                            <li> {{raisonSocialeAgence}}
+                                {{type}}
+                                {{# if adresse}}
+                                    {{adresse}}
+                                {{else}}
+                                    <a href="{{pathFor 'agenceEdit'}}">Adresse à completer</a>
+
+                                {{/if}}
+                                {{ville}}
+                                {{ref}}
+                                    {{# if currentUser }}
+                                        {{ username }}
+                                        <a href="{{pathFor 'agenceEdit'}}">Edit</a>
+
+                                    {{/if}}
+                            </li>
+                        {{/each}}
+                    </ul>
+
+        {{/if}}
+</template>

@@ -16,12 +16,19 @@
                 {{> agencesListInv}}
             </div>
 
-             <div class="col-md-3">
+   <div class="col-md-3">
+    
+            {{#if currentUser }}
             <h4>Toutes les agences</h4>
-                {{> toutesLesAgences}}
-            </div>
-        </div>
-    </div>
+            {{> toutesLesAgences}}
+                {{ else}}
+                Non connecté
+                {{/if }}
 
+
+</div>
+
+</div>
+   </div>
 </template>
 

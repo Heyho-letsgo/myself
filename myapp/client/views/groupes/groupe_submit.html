@@ -1,0 +1,16 @@
+<template name="groupeSubmit">
+    <div class="container">
+        <form>
+            <input name="raisonSociale" type="text" value="" placeholder=" Raison sociale du groupe"/>
+            <input name="numVoie" type="text" value="" placeholder=" Num voie du groupe"/>
+            <input name="voie" type="text" value="" placeholder=" Voie du groupe"/>
+            <input name="adresse" type="text" value="" placeholder=" Adresse du groupe"/>
+            <input name="cp" type="text" value="" placeholder=" Code postal du groupe"/>
+            <input name="tel" type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" value="" placeholder=" Téléphone du groupe"/>
+            <input name="mail" type="email" value="" placeholder=" Mail du groupe"/>
+
+
+            <input type="submit" value="Soumettre"/>
+        </form>
+    </div>
+</template>

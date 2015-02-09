@@ -1,3 +1,4 @@
+/*
 if (Groupes.find().count() === 0)
 {
 	Groupes.insert({raisonSociale: 'GroupeImmo01'});
@@ -12,7 +13,7 @@ if (Agences.find().count() === 0)
 		type: 'agence',
 		raisonSocialeAgence: 'Agence00',
 		type: 'Sarl.',
-		numrue: '2',
+    numrue: '2',
 		voie: 'rue',
 		adresse: 'des Moines',
 		cp: '75017',
@@ -24,3 +25,5 @@ if (Agences.find().count() === 0)
 	Agences.insert({ville: 'Paris',type: 'agence',raisonSocialeAgence: 'Agence02'});
 	Agences.insert({ville: 'Paris',type: 'agence',raisonSocialeAgence: 'Agence03', adresse: '48 rue des Moines'});
 }
+
+*/

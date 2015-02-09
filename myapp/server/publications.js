@@ -1,5 +1,5 @@
 Meteor.publish('groupes', function(raisonSociale) {
-    return Groupes.find({raisonSociale: raisonSociale});
+    return Groupes.find();
 });
 
 Meteor.publish('agences', function(type) {
@@ -7,6 +7,8 @@ Meteor.publish('agences', function(type) {
 });
 
 Meteor.publish('toutesLesAgences', function() {
+
     return Agences.find();
 });
+
 

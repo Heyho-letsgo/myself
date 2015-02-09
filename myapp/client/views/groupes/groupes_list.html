@@ -1,6 +1,9 @@
 <Template name="groupesList">
 <div class="container">
 
+    {{# if currentUser}}
+        <a href="{{pathFor 'groupeSubmit'}}">Nouveau groupe</a>
+        {{/if}}
     {{# if totalGroupe 1  }}
     <h3>Il y a {{totalGroupe}} groupe.</h3>
     {{else }}
@@ -10,6 +13,8 @@
         {{#each groupes}}
             <li>{{> groupeItem}}</li>
         {{/each}}
+            <a href="{{pathFor 'groupeEdit'}}">Edit</a>
+
     </ul>
 </div>
 </Template>
