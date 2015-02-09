@@ -11,11 +11,9 @@
     {{/if}}
     <ul>
         {{#each groupes}}
-            <li>{{> groupeItem}}</li>
+            <li>{{ raisonSociale}}   //  <a href="{{pathFor 'groupeItem'}}">Show</a></li>
         {{/each}}
-            <a href="{{pathFor 'groupeEdit'}}">Edit</a>
-
-    </ul>
+               </ul>
 </div>
 </Template>
 

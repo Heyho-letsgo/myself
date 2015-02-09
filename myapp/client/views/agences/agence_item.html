@@ -1,10 +1,12 @@
 <Template name="agenceItem">
+    <div class="container-fluid">
             {{raisonSocialeAgence}}
             <br>{{adresse}}
             <br>{{type}}
-            <br>{{ville}}
-
-    <a href={{pathFor 'agenceEdit'}}>Editer</a>
+            <br>{{ville}}<br>
+    <a href="{{pathFor 'agenceEdit'}}" class="btn btn-info">Editer</a>
+    <button class="delete btn btn-danger">Supprimer cette agence</button>
+    </div>
 </Template>
 
 

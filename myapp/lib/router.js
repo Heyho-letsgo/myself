@@ -22,7 +22,9 @@ Router.map(function(){
             return Agences.findOne(this.params._id);
         }
     });
-
+    this.route('agenceSubmit', {path: '/agenceSubmit'});
+    this.route('agencesList', {path: '/agencesList'});
+    this.route('toutesLesAgences', {path: '/toutesLesAgences'});
 
     this.route('groupeItem', {
         path: '/groupesList/:_id',
@@ -30,23 +32,17 @@ Router.map(function(){
             return Groupes.findOne(this.params._id);
         }
     });
-
     this.route('groupeEdit',{
         path: 'groupesList/:_id/edit',
         data: function () {
             return Groupes.findOne(this.params._id);
         }
     });
-
-
-
-
-    this.route('agenceSubmit', {path: '/agenceSubmit'});
-    this.route('toutesLesAgences', {path: '/toutesLesAgences'});
     this.route('groupesList', {path: '/groupesList'});
     this.route('groupeSubmit', {path: '/groupeSubmit'});
-    this.route('rassemblement', {path: '/rassemblement'});
 
+
+    this.route('rassemblement', {path: '/rassemblement'});
 });
 
 
@@ -60,7 +56,10 @@ var requireLogin = function() {
 
 
 Router.onBeforeAction(requireLogin, {only: 'agenceEdit'});
+Router.onBeforeAction(requireLogin, {only: 'AgencesList'});
 Router.onBeforeAction(requireLogin, {only: 'toutesLesAgences'});
 Router.onBeforeAction(requireLogin, {only: 'agenceSubmit'});
+
 Router.onBeforeAction(requireLogin, {only: 'groupeSubmit'});
 Router.onBeforeAction(requireLogin, {only: 'groupeEdit'});
+
