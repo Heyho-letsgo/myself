@@ -56,7 +56,7 @@ var requireLogin = function() {
 
 
 Router.onBeforeAction(requireLogin, {only: 'agenceEdit'});
-Router.onBeforeAction(requireLogin, {only: 'AgencesList'});
+Router.onBeforeAction(requireLogin, {only: 'agencesList'});
 Router.onBeforeAction(requireLogin, {only: 'toutesLesAgences'});
 Router.onBeforeAction(requireLogin, {only: 'agenceSubmit'});
 
