@@ -16,6 +16,14 @@ Router.map(function(){
             return Agences.findOne(this.params._id);
         }
     });
+
+    this.route('agencesResult', {
+        path: '/agencesResult/:_id',
+        data: function () {
+            return Agences.find();
+        }
+    });
+
     this.route('agenceEdit',{
         path: 'toutesLesagences/:_id/edit',
         data: function () {
@@ -24,6 +32,7 @@ Router.map(function(){
     });
     this.route('agenceSubmit', {path: '/agenceSubmit'});
     this.route('agencesList', {path: '/agencesList'});
+    this.route('agencesSearch', {path: '/agencesSearch'});
     this.route('toutesLesAgences', {path: '/toutesLesAgences'});
 
     this.route('groupeItem', {
@@ -59,6 +68,7 @@ Router.onBeforeAction(requireLogin, {only: 'agenceEdit'});
 Router.onBeforeAction(requireLogin, {only: 'agencesList'});
 Router.onBeforeAction(requireLogin, {only: 'toutesLesAgences'});
 Router.onBeforeAction(requireLogin, {only: 'agenceSubmit'});
+Router.onBeforeAction(requireLogin, {only: 'agenceSearch'});
 
 Router.onBeforeAction(requireLogin, {only: 'groupeSubmit'});
 Router.onBeforeAction(requireLogin, {only: 'groupeEdit'});

@@ -1,0 +1,14 @@
+<template name="agencesSearch">
+    <div class="container">
+        <form>
+            <input name="raisonSocialeAgence" id="searchTerms" type="text" class= "form-control" value="" placeholder=" Raison sociale de l'agence"/>
+            <button type="submit"  id="searchButton" >Rechecher</button>
+        </form>
+    </div>
+    <div>
+        {{#each agencesFind}}
+            {{agenceRaisonSociale}}
+        {{/each}}
+    </div>
+
+</template>
