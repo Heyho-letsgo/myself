@@ -1,4 +1,4 @@
-<template name="agenceEdit">
+<template name="agenceEdit" xmlns="http://www.w3.org/1999/html">
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-3 col-md-12" style="background-color:lavender;">
@@ -10,7 +10,16 @@
 			        <div class="form-group">
 			            <input name="raisonSocialeAgence" class="form-control" type="text" value={{raisonSocialeAgence}} placeholder=" Raison sociale de l'agence"/>
 			            <input name="ville" class="form-control" type="text" value={{ville}} placeholder=" Ville de l'agence"/>
-			            <input name="type" type="text" class="form-control" value={{type}} placeholder=" Type de l'agence"/>
+
+                        <select name="type" id="editType" type="text"  value={{type}} placeholder=" Type de l'agence">
+                            <option>Zob</option>
+                            <option>Eurl</option>
+                            <option>Sarl</option>
+                            <option>Sa</option>
+                            <option>Sas</option>
+                        </select>
+
+                        <input name="type" type="text" class="form-control" value={{type}} placeholder=" Type de l'agence"/>
 			    		<input type="submit" class="btn btn-info" value="Update" />   		     
 			    	</div>      
 			</div>
