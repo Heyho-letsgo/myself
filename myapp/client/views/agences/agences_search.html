@@ -7,8 +7,10 @@
     </div>
     <div>
         {{#each agencesFind}}
-            {{agenceRaisonSociale}}
+            {{raisonSocialeAgence}}
         {{/each}}
     </div>
+
+    <h2>Résultat de recherche: {{#each searchResult }} {{ raisonSocialeAgence }} {{ ville }} {{/each}} </h2>
 
 </template>
