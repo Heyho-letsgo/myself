@@ -3,7 +3,7 @@
  */
 
 
-Template.groupeSubmit.events({
+Template.groupeNew.events({
     'submit form': function (e) {
         e.preventDefault();
         var groupe = {

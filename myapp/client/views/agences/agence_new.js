@@ -3,7 +3,7 @@
  */
 
 
-Template.agenceSubmit.events({
+Template.agenceNew.events({
     'submit form': function (e) {
         e.preventDefault();
         var agence = {

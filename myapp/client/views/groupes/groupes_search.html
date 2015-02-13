@@ -1,0 +1,32 @@
+<template name="groupesSearch">
+
+    <div class="container">
+        <h4>Recherche de groupe</h4>
+        <form>
+
+            <input name="raisonSociale" id="searchRaisonSociale" type="text" class= "form-control" value="" placeholder=" Raison sociale du groupe"/>
+            <input name="ville" id="searchVille" type="text" class= "form-control" value="" placeholder=" Ville du groupe"/>
+
+
+
+            <button type="submit"  id="searchButton" >Rechecher</button>
+        </form>
+
+
+        <div class="container">
+        <h2>Résultat de recherche:</h2>
+{{# if searchResult}}
+        <ul>
+            {{#each searchResult }}
+            <li> {{ raisonSociale }}
+            <a href="{{pathFor '{{agenceNew'}}">Créer une agence pour ce groupe.</a></li>
+    {{/each}}
+    </ul>
+{{/if}}
+    </div>
+    </div>
+
+
+
+
+</template>

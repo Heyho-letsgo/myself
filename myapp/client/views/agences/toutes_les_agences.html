@@ -4,12 +4,12 @@
             <h1>{{currentUser.username}} a: {{ agencesTotalParUttilisateur }} sur {{agencesTotal}} agences</h1>
 
 
-            <a href="{{pathFor 'agenceSubmit'}}">Nouvelle agence</a>
+            <a href="{{pathFor 'agenceNew'}}">Nouvelle agence</a>
             <a href="{{pathFor 'agencesSearch'}}">Chercher une agence</a>
 
                              <ul>
                         {{#each agencesParUtilisateur}}
-                            <li> {{raisonSocialeAgence}}
+                            <li>  Nom du groupe : {{groupeRaisonSociale}} // id du groupe : {{groupeId}}//  id agence : {{_id}}// {{raisonSocialeAgence}}
                                 {{type}}
                                 {{# if adresse}}
                                     {{adresse}}

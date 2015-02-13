@@ -1,4 +1,4 @@
-Meteor.publish('groupes', function(raisonSociale) {
+Meteor.publish('groupes', function() {
     return Groupes.find();
 });
 

@@ -2,7 +2,9 @@
 <div class="container">
 
     {{# if currentUser}}
-        <a href="{{pathFor 'groupeSubmit'}}">Nouveau groupe</a>
+        <a href="{{pathFor 'groupeNew'}}">Nouveau groupe</a>
+        <a href="{{pathFor 'groupesSearch'}}">Chercher groupes</a>
+
         {{/if}}
     {{# if totalGroupe 1  }}
     <h3>Il y a {{totalGroupe}} groupe.</h3>
@@ -11,7 +13,7 @@
     {{/if}}
     <ul>
         {{#each groupes}}
-            <li>{{ raisonSociale}}   //  <a href="{{pathFor 'groupeItem'}}">Show</a></li>
+            <li>{{ raisonSociale}}   //  <a href="{{pathFor 'groupeItem'}}">Show</a>  <a href="{{pathFor 'groupeItem'}}">Créer une agence pour ce groupe.</a></li>
         {{/each}}
                </ul>
 </div>

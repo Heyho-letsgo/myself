@@ -1,3 +1,3 @@
-Meteor.subscribe('groupes','GroupeImmo03');
+Meteor.subscribe('groupes');
 Meteor.subscribe('agences','agence');
 Meteor.subscribe('toutesLesAgences');
