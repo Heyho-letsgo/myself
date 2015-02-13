@@ -25,28 +25,20 @@ alert( groupeName)
         Agences.insert({
             userId:Meteor.user(),
             groupeId: idGroupeSearch,
-            groupeRaisonSociale: groupeName
+            groupeRaisonSociale: groupeName,
+            agenceNew: 1
         });
 
-        var agenceCourante = Agences.findOne({}, {sort:{groupeId:idGroupeSearch}});
+        //var agenceCourante = Agences.findOne({}, {sort:{groupeId:idGroupeSearch}});
+    var agenceCourante = Agences.findOne({agenceNew : 1});
 
-
-        Router.go("agenceEdit", {_id: agenceCourante._id}) ;
-
-    }
-
-});
-
-Template.groupeItem.helpers({
-    searchResultId: function(){
-
-        var search = Session.get('resultatId'); // Récupere les valeurs entrées dans le formulaire par la session
-
-        return true;
+        Router.go("agenceEdit", { _id: agenceCourante._id}) ;
 
     }
 
 });
+
+
 
         /*  var agencesFind =
          Agences.find({$or: [
