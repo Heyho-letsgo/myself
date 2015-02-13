@@ -7,6 +7,7 @@ Template.agencesSearch.events({
     'submit form': function (e) {
         e.preventDefault();
         var agencesSearch = {
+            agenceGroupe: $(e.target).find('[name=agenceGroupe]').val(),
             raisonSocialeAgence: $(e.target).find('[name=raisonSocialeAgence]').val(),
             ville: $(e.target).find('[name=ville]').val(),
             type: $(e.target).find('[name=type]').val(),
@@ -26,9 +27,10 @@ Template.agencesSearch.helpers({
     searchResult:function(){
 
         var search = Session.get('resultat'); // Récupere les valeurs entrées dans le formulaire par la session
-        alert("Je recherche "+[search.raisonSocialeAgence] +" ou "+ [search.ville]+" ou " + [search.type])
+        alert("Je recherche "+[search.agenceGroupe] +" ou "+ [search.raisonSocialeAgence] +" ou "+ [search.ville]+" ou " + [search.type])
         var agencesFind =
                 Agences.find({$or: [
+                    {agenceGroupe:String(search.agenceGroupe)},
                     {raisonSocialeAgence:String(search.raisonSocialeAgence)},
                     {ville:String(search.ville)},
                     {type:String(search.type)}
