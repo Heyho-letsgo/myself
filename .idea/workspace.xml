@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e72c5681-d18b-4846-9d6c-682c9fdab0e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/client/views/agences/agence_edit.html" afterPath="$PROJECT_DIR$/myapp/client/views/agences/agence_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/client/views/groupes/groupe_item.js" afterPath="$PROJECT_DIR$/myapp/client/views/groupes/groupe_item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/client/views/groupes/groupe_new.html" afterPath="$PROJECT_DIR$/myapp/client/views/groupes/groupe_new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/myself.iml" afterPath="$PROJECT_DIR$/.idea/myself.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/client/views/agences/agence_edit.js" afterPath="$PROJECT_DIR$/myapp/client/views/agences/agence_edit.js" />
     </list>
     <ignored path="myself.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,11 +98,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="agence_edit.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="agence_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/client/views/agences/agence_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32188842" vertical-offset="0" max-vertical-offset="990">
+            <state vertical-scroll-proportion="-6.521739" vertical-offset="0" max-vertical-offset="990">
               <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agence_edit.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myapp/client/views/agences/agence_edit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.398773" vertical-offset="0" max-vertical-offset="510">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -154,7 +159,6 @@
         <option value="$PROJECT_DIR$/myapp/client/views/main/main_page.js" />
         <option value="$PROJECT_DIR$/myapp/client/views/agences/agence_submit.html" />
         <option value="$PROJECT_DIR$/myapp/collections/agences.js" />
-        <option value="$PROJECT_DIR$/myapp/client/views/agences/agence_edit.js" />
         <option value="$PROJECT_DIR$/myapp/client/views/agences/agence_submit.js" />
         <option value="$PROJECT_DIR$/myapp/client/views/rassemblement/rassemblement.html" />
         <option value="$PROJECT_DIR$/myapp/client/views/agences/agence_list_inv.js" />
@@ -180,6 +184,7 @@
         <option value="$PROJECT_DIR$/myapp/client/views/groupes/groupe_new.html" />
         <option value="$PROJECT_DIR$/myapp/client/views/groupes/groupe_item.js" />
         <option value="$PROJECT_DIR$/myapp/client/views/agences/agence_edit.html" />
+        <option value="$PROJECT_DIR$/myapp/client/views/agences/agence_edit.js" />
       </list>
     </option>
   </component>
@@ -603,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/client/views/agences/agence_edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myapp/client/views/agences/agences_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="285">
@@ -727,8 +725,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/client/views/agences/agence_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32188842" vertical-offset="0" max-vertical-offset="990">
+        <state vertical-scroll-proportion="-6.521739" vertical-offset="0" max-vertical-offset="990">
           <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/client/views/agences/agence_edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.398773" vertical-offset="0" max-vertical-offset="510">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding />
         </state>
       </provider>

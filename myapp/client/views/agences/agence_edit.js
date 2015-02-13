@@ -10,7 +10,9 @@ Template.agenceEdit.events({
             raisonSocialeAgence: $(e.target).find('[name=raisonSocialeAgence]').val(),
             ville: $(e.target).find('[name=ville]').val(),
             type: $(e.target).find('[name=type]').val(),
-            adresse: $(e.target).find('[name=adresse]').val()
+            adresse: $(e.target).find('[name=adresse]').val(),
+            agenceNew: 0
+
         };
 
         Agences.update(currentAgenceId, {$set: agenceProperties}, function (error) {
