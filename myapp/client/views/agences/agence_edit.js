@@ -4,8 +4,9 @@
 Template.agenceEdit.events({
     'submit form': function (e) {
         e.preventDefault();
-
+        // Je récupère l'Id de l'agence
         var currentAgenceId = this._id;
+        // Je récupère les valeurs saisies dans les champssci-dessous.
         var agenceProperties = {
             raisonSocialeAgence: $(e.target).find('[name=raisonSocialeAgence]').val(),
             ville: $(e.target).find('[name=ville]').val(),
@@ -14,8 +15,9 @@ Template.agenceEdit.events({
             agenceNew: 0
 
         };
-
+        // Je met à jour les valeurs saisies dans la collection
         Agences.update(currentAgenceId, {$set: agenceProperties}, function (error) {
+        // En cas de saisie non conforme, j'affiche le/les messages d'erreur.
             if (error) {
                 // display the error to the user
                 alert(error.reason);
@@ -26,3 +28,10 @@ Template.agenceEdit.events({
     }
 })
 
+Template.agenceEdit.events({
+    'click #deleteAgence': function () {
+        Agences.remove(this._id);
+        Router.go('groupesList');
+    }
+
+});

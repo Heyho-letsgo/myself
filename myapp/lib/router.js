@@ -75,4 +75,4 @@ Router.onBeforeAction(requireLogin, {only: 'agenceSearch'});
 Router.onBeforeAction(requireLogin, {only: 'groupeNew'});
 Router.onBeforeAction(requireLogin, {only: 'groupeEdit'});
 Router.onBeforeAction(requireLogin, {only: 'agenceNew'});
-
+Router.onBeforeAction(requireLogin, {only: 'groupesList'});
