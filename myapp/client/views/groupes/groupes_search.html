@@ -3,6 +3,11 @@
     <div class="container">
         <h4>Recherche de groupe</h4>
         <form>
+            <!-- <select name="raisonSociale" id="searchRaisonSociale" type="text" class= "form-control" value="" >
+                {{#each findGroupesNames}}
+                    <option>{{raisonSociale}}</option>
+                {{/each}}
+            </select>-->
 
             <input name="raisonSociale" id="searchRaisonSociale" type="text" class= "form-control" value="" placeholder=" Raison sociale du groupe"/>
             <input name="ville" id="searchVille" type="text" class= "form-control" value="" placeholder=" Ville du groupe"/>
@@ -19,7 +24,7 @@
         <ul>
             {{#each searchResult }}
             <li> {{ raisonSociale }}
-            <a href="{{pathFor '{{agenceNew'}}">Créer une agence pour ce groupe.</a></li>
+                <a href="{{pathFor 'groupeItem'}}">Créer une agence pour ce groupe.</a></li>
     {{/each}}
     </ul>
 {{/if}}

@@ -26,7 +26,7 @@ Template.groupesSearch.helpers({
     searchResult:function(){
 
         var search = Session.get('resultat'); // Récupere les valeurs entrées dans le formulaire par la session
-        alert("Je recherche "+[search.raisonSociale])
+        alert("Je recherche " + [search.raisonSociale]);
         var groupesFind =
                 Groupes.find(
                         {raisonSociale:String(search.raisonSociale)}
@@ -35,7 +35,7 @@ Template.groupesSearch.helpers({
 
                 );
 
-            ; // Requete db
+        // Requete db
 
         return groupesFind ;
     }
@@ -55,11 +55,19 @@ Template.groupesSearch.helpers({
                 //{type:String(search.type)}
 
 
-
-        ; // Requete db
+        // Requete db
 
         return groupesFind ;
     }
 
 });
+
+/*
+ Template.groupesSearch.helpers({
+ findGroupesNames:function(){
+ var groupesName =  Agences.find();
+ return groupesName.fetch();
+ }
+ });
+ */
 

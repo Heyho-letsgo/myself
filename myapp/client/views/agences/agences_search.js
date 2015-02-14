@@ -27,14 +27,13 @@ Template.agencesSearch.helpers({
     searchResult:function(){
 
         var search = Session.get('resultat'); // Récupere les valeurs entrées dans le formulaire par la session
-        alert("Je recherche "+[search.agenceGroupe] +" ou "+ [search.raisonSocialeAgence] +" ou "+ [search.ville]+" ou " + [search.type])
+        alert("Je recherche " + [search.agenceGroupe] + " ou " + [search.raisonSocialeAgence] + " ou " + [search.ville] + " ou " + [search.type]);
         var agencesFind =
                 Agences.find({$or: [
                     {agenceGroupe:String(search.agenceGroupe)},
                     {raisonSocialeAgence:String(search.raisonSocialeAgence)},
                     {ville:String(search.ville)},
                     {type:String(search.type)}
-
                 ]} )
 
             ; // Requete db
@@ -43,3 +42,4 @@ Template.agencesSearch.helpers({
     }
 
 });
+
