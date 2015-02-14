@@ -1,10 +1,35 @@
 <Template name="agencesList">
-    <ul>
-        {{#each agences}}
-            <li>{{> agenceItem}} {{_id}}</li>
-        {{/each}}
-    </ul>
-</Template>
+
+    {{#if currentUser}}
+        <h1>{{currentUser.username}} a: {{ agencesTotalParUttilisateur }} sur {{agencesTotal}} agences</h1>
+
+
+
+        <a href="{{pathFor 'agencesSearch'}}">Chercher une agence</a>
+
+        <ul>
+            {{#each agencesParUtilisateur}}
+                <li>  Nom du groupe : {{groupeRaisonSociale}} // id du groupe : {{groupeId}}//  id agence : {{_id}}// {{raisonSocialeAgence}}
+                    {{type}}
+                    {{# if adresse}}
+                        {{adresse}}
+                    {{else}}
+                        <a href="{{pathFor 'agenceEdit'}}">Adresse à completer</a>
+
+                    {{/if}}
+                    {{ville}}
+                    {{ref}}
+                    {{# if currentUser }}
+                        {{ username }}
+                        <a href="{{pathFor 'agenceItem'}}">Item</a>
+
+                    {{/if}}
+                </li>
+            {{/each}}
+        </ul>
+
+    {{/if}}
+</template>
 
 
 

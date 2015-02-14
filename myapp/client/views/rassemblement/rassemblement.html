@@ -3,9 +3,13 @@
         <h3>rassemblement.html</h3>
         <div class="row">
             <div class="col-md-3">
-                  <h4>Liste des Groupes</h4>
-                    {{> groupesList}}
-            </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Liste des Groupes</div>
+                    <div class="panel-body">
+                        {{> groupesList}}
+                    </div>
+                </div>
+                  </div>
             <div class="col-md-3">
                 <h4>Liste des Agences</h4>
                  {{> agencesList}}
@@ -20,7 +24,7 @@
     
             {{#if currentUser }}
             <h4>Toutes les agences</h4>
-            {{> toutesLesAgences}}
+            {{> agencesList}}
                 {{ else}}
                 Non connecté
                 {{/if }}
