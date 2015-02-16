@@ -12,7 +12,8 @@ Template.agenceEdit.events({
             ville: $(e.target).find('[name=ville]').val(),
             type: $(e.target).find('[name=type]').val(),
             adresse: $(e.target).find('[name=adresse]').val(),
-            agenceNew: 0
+            agenceNew: 0,
+            dateModification: new Date()
 
         };
         // Je met à jour les valeurs saisies dans la collection
