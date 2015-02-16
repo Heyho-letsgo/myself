@@ -1,12 +1,10 @@
 <Template name="agencesList">
 
     {{#if currentUser}}
-        <h1>{{currentUser.username}} a: {{ agencesTotalParUttilisateur }} sur {{agencesTotal}} agences</h1>
-
-
-
         <a href="{{pathFor 'agencesSearch'}}">Chercher une agence</a>
-
+        {{#if currentUser}}
+        <h3>{{currentUser.username}} a: {{ agencesTotalParUttilisateur }} sur {{agencesTotal}} agences.</h3>
+        {{/if}}
         <ul>
             {{#each agencesParUtilisateur}}
                 <li>  Nom du groupe : {{groupeRaisonSociale}} // id du groupe : {{groupeId}}//  id agence : {{_id}}// {{raisonSocialeAgence}}
@@ -30,6 +28,9 @@
 
     {{/if}}
 </template>
+
+
+
 
 
 

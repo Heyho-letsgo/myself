@@ -61,13 +61,3 @@ Template.groupesSearch.helpers({
     }
 
 });
-
-/*
- Template.groupesSearch.helpers({
- findGroupesNames:function(){
- var groupesName =  Agences.find();
- return groupesName.fetch();
- }
- });
- */
-

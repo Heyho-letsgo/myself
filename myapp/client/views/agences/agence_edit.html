@@ -1,61 +1,65 @@
 <template name="agenceEdit" xmlns="http://www.w3.org/1999/html">
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-3 col-md-12" style="background-color:lavender;">
-	<div class="container-fluid">
-		<div class="row">
-			    	<form role="form">
-			    
-			 <div class="col-md-3">
-			        <div class="form-group">
-                        randomId : {{agenceNew}}  {{groupeRaisonSociale}}
-			            <input name="raisonSocialeAgence" class="form-control" type="text" value={{raisonSocialeAgence}} placeholder=" Raison sociale de l'agence"/>
-			            <input name="ville" class="form-control" type="text" value={{ville}} placeholder=" Ville de l'agence"/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-12" style="background-color:lavender;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <form role="form">
 
-                        <select name="type" id="editType" type="text"  class="form-control" value={{type}} placeholder=" Type de l'agence">
+                            <div class="col-md-3">
+                                randomId : {{agenceNew}} <br> {{groupeRaisonSociale}}<br> Date de création
+                                : {{dateCreation}}
+                            </div>
 
-                            <option>Eurl</option>
-                            <option>Sarl</option>
-                            <option>Sa</option>
-                            <option>Sas</option>
-                        </select>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="form-group">
 
+                                        <input name="raisonSocialeAgence" class="form-control" type="text"
+                                               value={{raisonSocialeAgence}} placeholder=" Raison sociale de lagence"/>
+                                        <input name="ville" class="form-control" type="text" value={{ville}} placeholder="
+                                               Ville de lagence"/>
 
-			    		<input type="submit" class="btn btn-info" value="Update" />
-                        <button class="deleteAgence btn btn-warning" name="deleteAgence" id="deleteAgence">Supprimer une agence à ce groupe</button>
-			    	</div>
-			</div>
+                                        <select name="type" id="editType" type="text" class="form-control"
+                                                value={{type}} placeholder=" Type de l'agence">
 
-			<div class="col-md-3">
-					<div class="form-group">
-					<input name="adresse" type="text" class="form-control" value={{adresse}} placeholder=" Adresse de l'agence"/>
-			</div>  
-			</div>         
+                                        <option>Eurl</option>
+                                        <option>Sarl</option>
+                                        <option>Sa</option>
+                                        <option>Sas</option>
+                                        </select>
 
 
-			<div class="col-md-3">
-					<div class="form-group">
-					<input name="adresse" type="text" class="form-control" value={{adresse}} placeholder=" Adresse de l'agence"/>
-			</div>       
-			</div>    
-
-			<div class="col-md-3">
-					<div class="form-group">
-					<input name="adresse" type="text" class="form-control" value={{adresse}} placeholder=" Adresse de l'agence"/>
-			</div>           
-			</div>
-
-		</form>
-	
-</div>
-		
-			</div>
-			</div>
-			</div>
-			
-	</div>
+                                        <input type="submit" class="btn btn-info" value="Update"/>
+                                        <button class="deleteAgence btn btn-warning" name="deleteAgence" id="deleteAgence">
+                                            Supprimer une agence à ce groupe
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
 
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    infos à poser
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    infos à poser
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 </template>

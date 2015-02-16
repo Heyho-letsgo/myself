@@ -11,25 +11,37 @@
                 </div>
                   </div>
             <div class="col-md-3">
-                <h4>Liste des Agences</h4>
-                 {{> agencesList}}
+                <div class="panel panel-default">
+                    <div class="panel-heading">Liste des Agences.</div>
+                    <div class="panel-body">
+                                                {{> agencesList}}
             </div>
-
+</div>
+                </div>
             <div class="col-md-3">
-            <h4>Liste des AgencesInversées ayant une adresse.</h4>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Liste des AgencesInversées ayant une adresse.</div>
+                    <div class="panel-body">
+
                 {{> agencesListInv}}
             </div>
-
+</div></div>
    <div class="col-md-3">
-    
+
+       <div class="panel panel-default">
+           <div class="panel-heading">Toutes les agences.</div>
+           <div class="panel-body">
+
+
+
+
             {{#if currentUser }}
-            <h4>Toutes les agences</h4>
             {{> agencesList}}
                 {{ else}}
                 Non connecté
                 {{/if }}
-
-
+</div>
+</div>
 </div>
 
 </div>

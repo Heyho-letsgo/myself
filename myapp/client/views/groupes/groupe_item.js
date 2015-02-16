@@ -20,6 +20,7 @@ Template.groupeItem.events({
             userId:Meteor.user(),
             groupeId: idGroupeSearch,
             groupeRaisonSociale: groupeName,
+            dateCreation: new Date(),
             //Je crée un champ temporaire et lui affecte une valeur --> à transformer en valeur random
             agenceNew: randomId
         });
