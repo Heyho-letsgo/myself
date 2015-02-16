@@ -41,7 +41,7 @@ Template.groupesSearch.helpers({
     },
 
     groupesNames: function (){
-        return Groupes.find({});
+        return Groupes.find({}, {'raisonSociale':1, _id:0});
     },
 
 
