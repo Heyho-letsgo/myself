@@ -10,6 +10,7 @@ blaze-tools@1.0.2
 boilerplate-generator@1.0.2
 callback-hook@1.0.2
 check@1.0.4
+dburles:google-maps@1.0.8
 ddp@1.0.14
 deps@1.0.6
 ejson@1.0.5
@@ -60,6 +61,8 @@ spacebars-compiler@1.0.4
 srp@1.0.2
 stylus@1.0.6
 templating@1.0.11
+tomi:upload-jquery@2.0.2
+tomi:upload-server@1.1.1
 tracker@1.0.5
 twbs:bootstrap@3.3.2
 ui@1.0.5
