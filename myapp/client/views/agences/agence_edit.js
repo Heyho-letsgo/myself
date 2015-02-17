@@ -23,7 +23,7 @@ Template.agenceEdit.events({
                 // display the error to the user
                 alert(error.reason);
             } else {
-                Router.go('groupesList', {_id: currentAgenceId});
+                Router.go('agenceItem', {_id: currentAgenceId});
             }
         });
     }

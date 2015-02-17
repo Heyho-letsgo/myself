@@ -20,7 +20,7 @@ Template.utilisateurEdit.events({
                 // display the error to the user
                 alert(error.reason);
             } else {
-                Router.go('agencesList', {_id: currentUtilisateurId});
+                Router.go('utilisateurItem', {_id: currentUtilisateurId});
             }
         });
     }

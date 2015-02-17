@@ -2,6 +2,7 @@
 
     {{#if currentUser}}
         <a href="{{pathFor 'agencesSearch'}}">Chercher une agence</a>
+        <a href="{{pathFor 'groupesList'}}">Rajouter une agence</a>
         {{#if currentUser}}
         <h3>{{currentUser.username}} a: {{ agencesTotalParUttilisateur }} sur {{agencesTotal}} agences.</h3>
         {{/if}}

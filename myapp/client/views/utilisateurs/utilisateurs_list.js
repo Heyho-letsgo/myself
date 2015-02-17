@@ -1,6 +1,7 @@
+
 Template.utilisateursList.helpers({
     utilisateurs: function () {
-       return Utilisateurs.find();
+        return Utilisateurs.find();
     }
 });
 
@@ -8,4 +9,8 @@ Template.utilisateursList.helpers({
 
 
 
-
+Template.utilisateursListSimple.helpers({
+    utilisateurs: function () {
+        return Utilisateurs.find();
+    }
+});
