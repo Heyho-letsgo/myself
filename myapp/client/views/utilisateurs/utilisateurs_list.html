@@ -1,3 +1,18 @@
+<Template name="utilisateursList">
+    {{#if currentUser}} // {{currentUser.username}}
+        <div class="container">
 
+    <div class="panel panel-default">
+        <div class="panel-heading">UtilisateursList.</div>
+        <div class="panel-body">
+        <ul>
+            {{#each utilisateurs}}
+                <li> {{currentUser.username}} {{ groupeId}} {{nom}}</li>
+            {{/each}}
+        </ul>
 
-
+    </div>
+        </div>
+        </div>
+    {{/if}}
+</Template>

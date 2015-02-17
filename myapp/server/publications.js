@@ -9,3 +9,7 @@ Meteor.publish('agences', function() {
 });
 
 
+Meteor.publish('utilisateurs', function() {
+
+    return Utilisateurs.find();
+});

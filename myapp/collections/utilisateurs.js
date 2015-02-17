@@ -1,7 +1,3 @@
-/**
- * Created by andrew on 16/02/15.
- */
-
 Utilisateurs = new Meteor.Collection('utilisateurs');
 
 

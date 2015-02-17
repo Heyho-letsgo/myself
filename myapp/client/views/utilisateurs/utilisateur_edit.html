@@ -1,0 +1,55 @@
+<template name="utilisateurEdit" xmlns="http://www.w3.org/1999/html">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-12" style="background-color:lavender;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <form role="form">
+                            <div class="col-md-3">
+                                randomId : {{utilisateurNew}} <br>
+                                Groupe : {{groupeRaisonSociale}}<br>
+                                Agence :{{raisonSocialeAgence}} <br>
+                                Date de création : {{dateCreation}} <br>
+                                Date de modification : {{dateModification}}<br>
+                                _id : {{_id}}
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input name="nom" class="form-control" type="text"
+                                           value={{nom}} placeholder=" Nom de lutilisateur"/>
+
+
+                                    <input type="submit" class="btn btn-info" value="Update"/>
+                                        <button class="deleteUtilisateur btn btn-warning" name="deleteUtilisateur" id="deleteUtilisateur">
+                                            Supprimer un  utilisateur de cette agence.
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    infos à poser
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    infos à poser
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</template>
