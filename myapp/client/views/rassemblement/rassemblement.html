@@ -2,20 +2,13 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Liste des Groupes</div>
-                    <div class="panel-body">
-                        {{> groupesList}}
-                    </div>
-                </div>
+                     {{> groupesList}}
+
                   </div>
             <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Liste des Agences.</div>
-                    <div class="panel-body">
-                                                {{> agencesList}}
-            </div>
-</div>
+
+                {{> agencesList}}
+
                 </div>
             <div class="col-md-3">
                 <div class="panel panel-default">
@@ -27,23 +20,14 @@
 </div></div>
    <div class="col-md-3">
 
-       <div class="panel panel-default">
-           <div class="panel-heading">Toutes les agences.</div>
-           <div class="panel-body">
-
-
-
-
             {{#if currentUser }}
             {{> agencesList}}
                 {{ else}}
                 Non connecté
                 {{/if }}
-</div>
-</div>
-</div>
 
 </div>
+            </div>
    </div>
 </template>
 

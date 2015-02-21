@@ -1,5 +1,10 @@
 <Template name="groupesList">
-<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Liste des groupes</div>
+                    <div class="panel-body">
 
     {{# if currentUser}}
         <a href="{{pathFor 'groupeNew'}}">Nouveau groupe</a>
@@ -16,6 +21,11 @@
             <li>{{ raisonSociale}}   //  <a href="{{pathFor 'groupeItem'}}">Show</a>  <a href="{{pathFor 'groupeItem'}}">Créer une agence pour ce groupe.</a></li>
         {{/each}}
                </ul>
+
 </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </Template>
 
