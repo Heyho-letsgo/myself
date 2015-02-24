@@ -10,6 +10,9 @@ accounts-password
 twbs:bootstrap
 ian:accounts-ui-bootstrap-3
 underscore
+dburles:google-maps
+mrt:googlemaps
+coffeescript
 tomi:upload-server
 tomi:upload-jquery
-dburles:google-maps
+pauldowman:dotenv

@@ -14,8 +14,8 @@ Template.accueil.helpers({
         if (GoogleMaps.loaded()) {
             // Map initialization options
             return {
-                center: new google.maps.LatLng(-37.8136, 144.9631),
-                zoom: 8
+                center: new google.maps.LatLng(48.8428330, 2.3546252),
+                zoom: 10
             };
         }
     }

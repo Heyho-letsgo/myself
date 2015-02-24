@@ -9,6 +9,9 @@ Router.configure({
 Router.map(function(){
     this.route('accueil', {path: '/'});
     this.route('mainPage', {path: '/mainPage'});
+    this.route('googlePlaces', {path: '/places'});
+
+
 
 
     this.route('groupeItem', {
@@ -73,6 +76,7 @@ Router.map(function(){
     this.route('utilisateurNew', {path: '/utilisateurNew'});
     this.route('utilisateursSearch', {path: '/utilisateursSearch'});
     this.route('utilisateursList', {path: '/utilisateursList'});
+
 
 
 

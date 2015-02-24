@@ -5,14 +5,14 @@
     {{# if currentUser}}
     Nom : {{username}}
         {{/if}}
-</div>
+
 
     {{> upload_bootstrap }}
-
-
+    {{> dropzone }}
 
     <div class="map-container">
         {{> googleMap name="exampleMap" options=exampleMapOptions}}
     </div>
+</div>
 
     </template>

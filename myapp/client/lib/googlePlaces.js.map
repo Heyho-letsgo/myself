@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "googlePlaces.js",
+  "sourceRoot": "",
+  "sources": [
+    "googlePlaces.coffee"
+  ],
+  "names": [],
+  "mappings": ";AACA;AAAA,EAAA,UAAU,CAAC,IAAX,CAAA;;AAAA,EAEA,CAAA;AAAA,IAAA,GAAA,EAAK,yCAAL;AAAA,IACA,QAAA,EAAU,IADV;GAAA,CAFA,CAAA;AAAA"
+}
