@@ -1,6 +1,4 @@
-
-
-Session.set('resultat' , undefined);
+Session.set('resultat', undefined);
 
 Template.agencesSearch.events({
 //FORMULAIRE
@@ -11,7 +9,7 @@ Template.agencesSearch.events({
             raisonSocialeAgence: $(e.target).find('[name=raisonSocialeAgence]').val(),
             ville: $(e.target).find('[name=ville]').val(),
             type: $(e.target).find('[name=type]').val(),
-            userId:Meteor.user()
+            userId: Meteor.user()
         };
 
         //Chargement des entrées formulaire dans la session
@@ -25,26 +23,50 @@ Template.agencesSearch.events({
 
 
 Template.agencesSearch.helpers({
-
-    agencesNames: function (){
-        return Agences.find({}, {'raisonSocialeAgence':1, _id:0});
+    groupesNames: function () {
+        return Groupes.find({}, {'raisonSociale': 1, _id: 0});
     },
 
-    searchResult:function(){
+
+    agencesNames: function () {
+        return Agences.find({}, {'raisonSocialeAgence': 1, _id: 0});
+    },
+
+    searchResultET: function () {
+
+        var search = Session.get('resultat'); // Récupere les valeurs entrées dans le formulaire par la session
+
+        var agencesFind =
+            Agences.find({
+                $and: [
+                    {$or: [{groupeRaisonSociale: String(search.agenceGroupe)}]},
+                    {$or: [{raisonSocialeAgence: String(search.raisonSocialeAgence)}]}
+                    //{ville:String(search.ville)},
+                    //{type:String(search.type)}
+                ]
+            }); // Requete db
+
+        alert("Je recherche " + [search.agenceGroupe] + " et " + [search.raisonSocialeAgence] + " et " + [search.ville] + " et " + [search.type]);
+        return agencesFind;
+    },
+// retour avec OU
+    searchResultOU: function () {
 
         var search = Session.get('resultat'); // Récupere les valeurs entrées dans le formulaire par la session
         alert("Je recherche " + [search.agenceGroupe] + " ou " + [search.raisonSocialeAgence] + " ou " + [search.ville] + " ou " + [search.type]);
         var agencesFind =
-                Agences.find({$or: [
-                    {agenceGroupe:String(search.agenceGroupe)},
-                    {raisonSocialeAgence:String(search.raisonSocialeAgence)},
-                    {ville:String(search.ville)},
-                    {type:String(search.type)}
-                ]} )
+                Agences.find({
+                    $or: [
+                        {agenceGroupe: String(search.agenceGroupe)},
+                        {raisonSocialeAgence: String(search.raisonSocialeAgence)},
+                        {ville: String(search.ville)},
+                        {type: String(search.type)}
+                    ]
+                })
 
-            ; // Requete db
-
-        return agencesFind ;
+            ;
+        alert("Je recherche " + [search.agenceGroupe] + " ou " + [search.raisonSocialeAgence] + " ou " + [search.ville] + " ou " + [search.type]);
+        return agencesFind;
     }
 
 });
