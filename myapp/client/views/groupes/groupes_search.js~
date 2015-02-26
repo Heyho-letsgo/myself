@@ -44,7 +44,7 @@ Template.groupesSearch.helpers({
         return Groupes.find({}, {'raisonSociale':1, _id:0});
     },
 
-// fonction pour créer une nouvelle agence
+
     agenceNew:function(){
         var search = Session.get('resultat'); // Récupere les valeurs entrées dans le formulaire par la session
         //alert("Je recherche "+[search.raisonSociale])

@@ -19,10 +19,16 @@ Template.agencesSearch.events({
 //alert([agencesSearch.raisonSocialeAgence] + [agencesSearch.ville])
 
     }
+
+
 });
 
 
 Template.agencesSearch.helpers({
+
+    agencesNames: function (){
+        return Agences.find({}, {'raisonSocialeAgence':1, _id:0});
+    },
 
     searchResult:function(){
 

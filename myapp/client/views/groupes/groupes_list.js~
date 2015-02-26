@@ -1,6 +1,13 @@
+Template.groupesList.helpers({
+    groupes: function () {
+        return Groupes.find();
+    }
+});
+
+
 
 Template.groupesList.helpers({
-	z : function() {
-		return Groupes.find();
+    totalGroupe: function ()
+    	return Groupes.find().count();
 	}
 });
