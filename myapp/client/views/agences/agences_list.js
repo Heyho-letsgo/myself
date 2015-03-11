@@ -4,7 +4,10 @@ Template.agencesList.helpers({
             {
                 sort: {raisonSocialeAgence: -1}, limit: 5
             });
-    }
+    },
+      totalAgences: function () {
+    	return Agences.find().count();
+	}
 });
 
 
