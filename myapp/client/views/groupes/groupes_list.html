@@ -8,9 +8,10 @@
 
     {{# if currentUser}}
         <a href="{{pathFor 'groupeNew'}}">Nouveau groupe</a>
-        <a href="{{pathFor 'groupesSearch'}}">Chercher groupes</a>
-
-        {{/if}}
+          {{# if totalGroupe ">0" }}
+                      <a href="{{pathFor 'groupesSearch'}}">Chercher groupes</a>
+                      {{/if}}
+                {{/if}}
     {{# if totalGroupe 1  }}
     <h3>Il y a {{totalGroupe}} groupe.</h3>
     {{else }}
