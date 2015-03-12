@@ -53,7 +53,13 @@ Router.map(function(){
     this.route('agenceNew', {path: '/agenceNew'});
     this.route('agencesSearch', {path: '/agencesSearch'});
     this.route('agencesList', {path: '/agencesList'});
+    this.route('agencesListArchive', {
+        path: '/agencesListArchive',
+        data: function () {
+          return Agences.find({'archive' : true})
+    }});
 
+  
 
     this.route('utilisateurItem', {
         path: '/utilisateursList/:_id',
@@ -103,6 +109,7 @@ Router.onBeforeAction(requireLogin, {only: 'agenceEdit'});
 Router.onBeforeAction(requireLogin, {only: 'agencesList'});
 Router.onBeforeAction(requireLogin, {only: 'agenceSubmit'});
 Router.onBeforeAction(requireLogin, {only: 'agencesSearch'});
+Router.onBeforeAction(requireLogin, {only: 'agencesListArchive'});
 
 
 Router.onBeforeAction(requireLogin, {only: 'utilisateurEdit'});
