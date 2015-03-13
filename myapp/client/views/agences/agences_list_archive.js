@@ -1,6 +1,6 @@
 Template.agencesListArchive.helpers({
     archives: function () {
-        return Agences.find({'archive':true},
+        return Agences.find({'archive': true},
             {
                 sort: {raisonSocialeAgence: -1}, limit: 5
             });
@@ -8,20 +8,22 @@ Template.agencesListArchive.helpers({
     agencesTotalParUttilisateur: function () {
         return Agences.find(
             {
-                userId: { $in : [Meteor.user()]}}
+                userId: {$in: [Meteor.user()]}
+            }
         ).count();
     },
     agencesTotal: function () {
-        return Agences.find({'archive':true}).count();
+        return Agences.find({'archive': true}).count();
     },
     username: function () {
         return Meteor.user() && Meteor.user()._id;
     },
     agencesParUtilisateur: function () {
         return Agences.find({
-            userId: { $in : [Meteor.user()]}});
+            userId: {$in: [Meteor.user()]}
+        });
     }
-  });
+});
 
 
 Template.agencesListArchive.events({
@@ -29,8 +31,8 @@ Template.agencesListArchive.events({
         Agences.remove(this._id);
         Router.go('agencesList');
     },
-  'click .desArchiveItem' : function () {
+    'click .desArchiveItem': function () {
         Agences.update(this._id, {$set: {archive: false}});
-    //  Router.go('agencesList');
-       }
-  });
+        //  Router.go('agencesList');
+    }
+});

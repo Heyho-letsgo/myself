@@ -1,21 +1,21 @@
 <Template name="utilisateursList">
     {{#if currentUser}}
         <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-    <div class="panel panel-default">
-        <div class="panel-heading">UtilisateursList.</div>
-        <div class="panel-body">
-        <ul>
-            {{#each utilisateurs}}
-                <li> {{currentUser.username}} {{ groupeId}} {{nom}}</li>
-            {{/each}}
-        </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">UtilisateursList.</div>
+                        <div class="panel-body">
+                            <ul>
+                                {{#each utilisateurs}}
+                                    <li> {{currentUser.username}} {{ groupeId}} {{nom}}</li>
+                                {{/each}}
+                            </ul>
 
-    </div>
-        </div>
-        </div>
-    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     {{/if}}
 
@@ -24,12 +24,12 @@
 
 <Template name="utilisateursListSimple">
     {{#if currentUser}}
-                    <ul>
-                        {{#each utilisateurs}}
-                            <li> {{ groupeRaisonSociale}}
-                                <a href="{{pathFor 'utilisateurItem'}}">{{nom}}</a> </li>
-                        {{/each}}
-                    </ul>
+        <ul>
+            {{#each utilisateurs}}
+                <li> {{ groupeRaisonSociale}}
+                    <a href="{{pathFor 'utilisateurItem'}}">{{nom}}</a></li>
+            {{/each}}
+        </ul>
 
     {{/if}}
 </Template>

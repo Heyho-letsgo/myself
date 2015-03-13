@@ -2,32 +2,33 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                     {{> groupesList}}
+                {{> groupesList}}
 
-                  </div>
+            </div>
             <div class="col-md-3">
 
                 {{> agencesList}}
 
-                </div>
+            </div>
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">Liste des utilisateurs.</div>
                     <div class="panel-body">
 
-                {{> utilisateursListSimple}}
+                        {{> utilisateursListSimple}}
+                    </div>
+                </div>
             </div>
-</div></div>
-   <div class="col-md-3">
+            <div class="col-md-3">
 
-            {{#if currentUser }}
-            {{> agencesListArchive}}
+                {{#if currentUser }}
+                    {{> agencesListArchive}}
                 {{ else}}
-                Non connecté
+                    Non connecté
                 {{/if }}
 
-</div>
             </div>
-   </div>
+        </div>
+    </div>
 </template>
 

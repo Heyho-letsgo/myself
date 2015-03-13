@@ -16,7 +16,7 @@ Template.groupeNew.events({
             tel: $(e.target).find('[name=tel]').val(),
             mail: $(e.target).find('[name=mail]').val(),
 
-            userId:Meteor.user()
+            userId: Meteor.user()
         };
 
         groupe._id = Groupes.insert(groupe);

@@ -13,13 +13,13 @@ Template.agenceEdit.events({
             type: $(e.target).find('[name=type]').val(),
             adresse: $(e.target).find('[name=adresse]').val(),
             agenceNew: 0,
-            archive : false,
+            archive: false,
             dateModification: new Date()
 
         };
         // Je met à jour les valeurs saisies dans la collection
         Agences.update(currentAgenceId, {$set: agenceProperties}, function (error) {
-        // En cas de saisie non conforme, j'affiche le/les messages d'erreur.
+            // En cas de saisie non conforme, j'affiche le/les messages d'erreur.
             if (error) {
                 // display the error to the user
                 alert(error.reason);

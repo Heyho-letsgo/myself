@@ -6,43 +6,46 @@
                     <div class="panel-heading">Liste des agences actives</div>
                     <div class="panel-body">
 
-    {{#if currentUser}}
-                      {{# if  agencesTotal }}
-        <a href="{{pathFor 'agencesSearch'}}">Chercher une agence</a>
-                      {{/if}}
-        <a href="{{pathFor 'groupesList'}}">Rajouter une agence</a>
-                      <a href="{{pathFor 'agencesListArchive'}}">Trouver les agences archivées</a>
-        {{#if currentUser}}
-        <h3>{{currentUser.username}} a: {{ agencesTotalParUttilisateur }} sur {{agencesTotal}} agences actives.</h3>
-        {{/if}}
-        <ul>
-            {{#each agencesParUtilisateur}}
-                <li>  Nom du groupe : {{groupeRaisonSociale}} // id du groupe : {{groupeId}}//  id agence : {{_id}}// {{raisonSocialeAgence}}
-                    {{type}}
-                    {{# if adresse}}
-                        {{adresse}}
-                    {{else}}
-                        <a href="{{pathFor 'agenceEdit'}}">Adresse à completer</a>
+                        {{#if currentUser}}
+                            {{# if  agencesTotal }}
+                                <a href="{{pathFor 'agencesSearch'}}">Chercher une agence</a>
+                            {{/if}}
+                            <a href="{{pathFor 'groupesList'}}">Rajouter une agence</a>
+                            <a href="{{pathFor 'agencesListArchive'}}">Trouver les agences archivées</a>
+                            {{#if currentUser}}
+                                <h3>{{currentUser.username}} a: {{ agencesTotalParUttilisateur }} sur {{agencesTotal}}
+                                    agences actives.</h3>
+                            {{/if}}
+                            <ul>
+                                {{#each agencesParUtilisateur}}
+                                    <li> Nom du groupe : {{groupeRaisonSociale}} // id du groupe : {{groupeId}}// id
+                                        agence : {{_id}}// {{raisonSocialeAgence}}
+                                        {{type}}
+                                        {{# if adresse}}
+                                            {{adresse}}
+                                        {{else}}
+                                            <a href="{{pathFor 'agenceEdit'}}">Adresse à completer</a>
 
-                    {{/if}}
-                    {{ville}}
-                    {{ref}}
-                    {{# if currentUser }}
-                        {{ username }}
-                        <a href="{{pathFor 'agenceItem'}}">Item</a>
-                                    <button class="archiveItem btn btn-warning" id="archiveItem">Archive</button>
+                                        {{/if}}
+                                        {{ville}}
+                                        {{ref}}
+                                        {{# if currentUser }}
+                                            {{ username }}
+                                            <a href="{{pathFor 'agenceItem'}}">Item</a>
+                                            <button class="archiveItem btn btn-warning" id="archiveItem">Archive
+                                            </button>
 
-                    {{/if}}
-                </li>
-            {{/each}}
-        </ul>
+                                        {{/if}}
+                                    </li>
+                                {{/each}}
+                            </ul>
 
-    {{/if}}
+                        {{/if}}
                     </div>
                 </div>
             </div>
-            </div>
-</div>
+        </div>
+    </div>
 </template>
 
 

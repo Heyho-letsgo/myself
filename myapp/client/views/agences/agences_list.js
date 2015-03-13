@@ -8,16 +8,16 @@ Template.agencesList.helpers({
     agencesTotalParUttilisateur: function () {
         return Agences.find(
             {
-                userId: { $in : [Meteor.user()]},
-              'archive' : false
+                userId: {$in: [Meteor.user()]},
+                'archive': false
             }
         ).count();
     },
     agencesTotal: function () {
         return Agences.find(
-                    {
-                userId: { $in : [Meteor.user()]},
-              'archive' : false
+            {
+                userId: {$in: [Meteor.user()]},
+                'archive': false
             }
         ).count();
     },
@@ -26,15 +26,16 @@ Template.agencesList.helpers({
     },
     agencesParUtilisateur: function () {
         return Agences.find({
-            userId: { $in : [Meteor.user()]},
-            'archive' : false });
+            userId: {$in: [Meteor.user()]},
+            'archive': false
+        });
     }
-  });
+});
 
 
 Template.agencesList.events({
 
-  'click .archiveItem' : function () {
+    'click .archiveItem': function () {
         Agences.update(this._id, {$set: {archive: true}});
-       }
-  });
+    }
+});

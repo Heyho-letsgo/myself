@@ -1,15 +1,15 @@
-Meteor.publish('groupes', function() {
+Meteor.publish('groupes', function () {
     return Groupes.find();
 });
 
 
-Meteor.publish('agences', function() {
+Meteor.publish('agences', function () {
 
     return Agences.find();
 });
 
 
-Meteor.publish('utilisateurs', function() {
+Meteor.publish('utilisateurs', function () {
 
     return Utilisateurs.find();
 });

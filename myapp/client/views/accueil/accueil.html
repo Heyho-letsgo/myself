@@ -1,17 +1,16 @@
-
 <template name="accueil">
-<div class="container">
-  <h2>Accueil</h2>
-    {{# if currentUser}}
-    Nom : {{username}}
+    <div class="container">
+        <h2>Accueil</h2>
+        {{# if currentUser}}
+            Nom : {{username}}
         {{/if}}
 
 
-   
 
-    <div class="map-container">
-        {{> googleMap name="exampleMap" options=exampleMapOptions}}
+
+        <div class="map-container">
+            {{> googleMap name="exampleMap" options=exampleMapOptions}}
+        </div>
     </div>
-</div>
 
-    </template>
+</template>

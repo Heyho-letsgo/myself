@@ -6,11 +6,9 @@ Router.configure({
 });
 
 
-Router.map(function(){
+Router.map(function () {
     this.route('accueil', {path: '/'});
     this.route('googlePlaces', {path: '/places'});
-
-
 
 
     this.route('groupeItem', {
@@ -19,7 +17,7 @@ Router.map(function(){
             return Groupes.findOne(this.params._id);
         }
     });
-    this.route('groupeEdit',{
+    this.route('groupeEdit', {
         path: 'groupesList/:_id/edit',
         data: function () {
             return Groupes.findOne(this.params._id);
@@ -43,7 +41,7 @@ Router.map(function(){
             return Agences.find();
         }
     });
-    this.route('agenceEdit',{
+    this.route('agenceEdit', {
         path: 'agencesList/:_id/edit',
         data: function () {
             return Agences.findOne(this.params._id);
@@ -55,10 +53,10 @@ Router.map(function(){
     this.route('agencesListArchive', {
         path: '/agencesListArchive',
         data: function () {
-          return Agences.find({'archive' : true})
-    }});
+            return Agences.find({'archive': true})
+        }
+    });
 
-  
 
     this.route('utilisateurItem', {
         path: '/utilisateursList/:_id',
@@ -72,7 +70,7 @@ Router.map(function(){
             return Utilisateur.find();
         }
     });
-    this.route('utilisateurEdit',{
+    this.route('utilisateurEdit', {
         path: 'utilisateursList/:_id/edit',
         data: function () {
             return Utilisateurs.findOne(this.params._id);
@@ -83,17 +81,15 @@ Router.map(function(){
     this.route('utilisateursList', {path: '/utilisateursList'});
 
 
-
-
 });
 
 
-var requireLogin = function() {
-  if (! Meteor.user()) {
-    this.render('accessDenied');
-  } else {
-    this.next();
-  }
+var requireLogin = function () {
+    if (!Meteor.user()) {
+        this.render('accessDenied');
+    } else {
+        this.next();
+    }
 }
 
 Router.onBeforeAction(requireLogin, {only: 'rassemblement'});

@@ -1,19 +1,21 @@
 <Template name="agenceItem">
     <div class="container-fluid">
-            {{raisonSocialeAgence}} <br>
-            Id du groupe : {{groupeId}}{{groupeId.raisonSociale}}
-            <br>{{adresse}}
-            <br>{{type}}
-            <br>{{ville}}<br>
-    <a href="{{pathFor 'agenceEdit'}}" class="btn btn-info">Editer</a>
+        {{raisonSocialeAgence}} <br>
+        Id du groupe : {{groupeId}}{{groupeId.raisonSociale}}
+        <br>{{adresse}}
+        <br>{{type}}
+        <br>{{ville}}<br>
+        <a href="{{pathFor 'agenceEdit'}}" class="btn btn-info">Editer</a>
         <button class="deleteItem btn btn-warning" id="deleteItem">Delete</button>
-        <button class="addUtilisateur btn btn-primary" name="ajoutUtilisateur" id="ajoutUtilisateur">Ajouter un utilisateur à cette agence</button>
+        <button class="addUtilisateur btn btn-primary" name="ajoutUtilisateur" id="ajoutUtilisateur">Ajouter un
+            utilisateur à cette agence
+        </button>
     </div>
 </Template>
 
 
 <Template name="agenceItemEnLigne">
 
-            <a href="{{pathFor 'agenceItem'}}">{{raisonSocialeAgence}}</a> {{adresse}}
+    <a href="{{pathFor 'agenceItem'}}">{{raisonSocialeAgence}}</a> {{adresse}}
 
 </Template>

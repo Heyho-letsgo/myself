@@ -1,7 +1,8 @@
 <template name="agencesSearch">
 
     <div class="container">
-<h4>Recherche d'agence</h4>
+        <h4>Recherche d'agence</h4>
+
         <form>
 
             <select name="agenceGroupe" id="searchAgenceGroupe" type="text" class="form-control">
@@ -10,18 +11,18 @@
                 {{/each}}
             </select>
 
-	            <select name="raisonSocialeAgence" id="searchRaisonSociale" type="text" class="form-control">
-                    {{#each agencesNames}}
-                        <option> {{raisonSocialeAgence}} </option>
-                    {{/each}}
+            <select name="raisonSocialeAgence" id="searchRaisonSociale" type="text" class="form-control">
+                {{#each agencesNames}}
+                    <option> {{raisonSocialeAgence}} </option>
+                {{/each}}
 
-            </select><input name="ville" id="searchVille" type="text" class= "form-control" value="" placeholder=" Ville de l'agence"/>
+            </select><input name="ville" id="searchVille" type="text" class="form-control" value=""
+                            placeholder=" Ville de l'agence"/>
 
 
+            <select name="type" id="searchType" type="text" class="form-control" value="">
 
-            <select name="type" id="searchType" type="text" class= "form-control" value="" >
-
-                    <option value="" color="red">Type d'agence ? </option>
+                <option value="" color="red">Type d'agence ?</option>
                 <option></option>
                 <option>Eurl</option>
                 <option>Sarl</option>
@@ -30,19 +31,19 @@
 
             </select>
 
-            <button type="submit"  id="searchResultOU" >Rechecher Ou</button>
-            <button type="submit"  id="searchResultET" >Rechecher Et</button>
+            <button type="submit" id="searchResultOU">Rechecher Ou</button>
+            <button type="submit" id="searchResultET">Rechecher Et</button>
         </form>
 
 
         <div class="container">
-        <h2>Résultat de recherche ET:</h2>
-        <ul>
-        {{#each searchResultET }}
-        <li> {{groupeRaisonSociale}} {{ raisonSocialeAgence }} {{ ville }}</li>
-    {{/each}}
-    </ul>
-    </div>
+            <h2>Résultat de recherche ET:</h2>
+            <ul>
+                {{#each searchResultET }}
+                    <li> {{groupeRaisonSociale}} {{ raisonSocialeAgence }} {{ ville }}</li>
+                {{/each}}
+            </ul>
+        </div>
     </div>
 
 
@@ -54,9 +55,6 @@
             {{/each}}
         </ul>
     </div>
-
-
-
 
 
 </template>

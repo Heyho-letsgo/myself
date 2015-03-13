@@ -6,24 +6,25 @@
                     <div class="panel-heading">Liste des groupes</div>
                     <div class="panel-body">
 
-    {{# if currentUser}}
-        <a href="{{pathFor 'groupeNew'}}">Nouveau groupe</a>
-          {{# if totalGroupe ">0" }}
-                      <a href="{{pathFor 'groupesSearch'}}">Chercher groupes</a>
-                      {{/if}}
-                {{/if}}
-    {{# if totalGroupe 1  }}
-    <h3>Il y a {{totalGroupe}} groupe.</h3>
-    {{else }}
-    <h3>Il y a {{totalGroupe}} groupes.</h3>
-    {{/if}}
-    <ul>
-        {{#each groupes}}
-            <li>{{ raisonSociale}}   //  <a href="{{pathFor 'groupeItem'}}">Show</a>  <a href="{{pathFor 'groupeItem'}}">Créer une agence pour ce groupe.</a></li>
-        {{/each}}
-               </ul>
+                        {{# if currentUser}}
+                            <a href="{{pathFor 'groupeNew'}}">Nouveau groupe</a>
+                            {{# if totalGroupe ">0" }}
+                                <a href="{{pathFor 'groupesSearch'}}">Chercher groupes</a>
+                            {{/if}}
+                        {{/if}}
+                        {{# if totalGroupe 1  }}
+                            <h3>Il y a {{totalGroupe}} groupe.</h3>
+                        {{else }}
+                            <h3>Il y a {{totalGroupe}} groupes.</h3>
+                        {{/if}}
+                        <ul>
+                            {{#each groupes}}
+                                <li>{{ raisonSociale}}   // <a href="{{pathFor 'groupeItem'}}">Show</a> <a
+                                        href="{{pathFor 'groupeItem'}}">Créer une agence pour ce groupe.</a></li>
+                            {{/each}}
+                        </ul>
 
-</div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -2,13 +2,19 @@
     <div class="container-fluid">
         <div class="row">
             <form role="form">
-                <input name="raisonSociale" class="form-control" type="text" value="{{ raisonSociale }}" placeholder=" Raison sociale du groupe"/>
-                <input name="numVoie" class="form-control" type="text" value="{{ numVoie }}" placeholder=" Num voie du groupe"/>
+                <input name="raisonSociale" class="form-control" type="text" value="{{ raisonSociale }}"
+                       placeholder=" Raison sociale du groupe"/>
+                <input name="numVoie" class="form-control" type="text" value="{{ numVoie }}"
+                       placeholder=" Num voie du groupe"/>
                 <input name="voie" class="form-control" type="text" value="{{ voie }}" placeholder=" Voie du groupe"/>
-                <input name="adresse" class="form-control" type="text" value="{{ adresse}}" placeholder=" Adresse du groupe"/>
-                <input name="cp" class="form-control" type="text" value="{{ cp }}" placeholder=" Code postal du groupe"/>
-                <input name="ville" class="form-control" type="text" value="{{ ville }}" placeholder=" Ville du groupe"/>
-                <input name="tel" class="form-control" type="tel" value="{{ tel }}" placeholder=" Téléphone du groupe" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"/>
+                <input name="adresse" class="form-control" type="text" value="{{ adresse}}"
+                       placeholder=" Adresse du groupe"/>
+                <input name="cp" class="form-control" type="text" value="{{ cp }}"
+                       placeholder=" Code postal du groupe"/>
+                <input name="ville" class="form-control" type="text" value="{{ ville }}"
+                       placeholder=" Ville du groupe"/>
+                <input name="tel" class="form-control" type="tel" value="{{ tel }}" placeholder=" Téléphone du groupe"
+                       pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"/>
                 <input name="mail" class="form-control" type="email" value="{{ mail }}" placeholder=" Mail du groupe"/>
                 <input type="submit" class="btn btn-info" value="Update"/>
             </form>

@@ -5,9 +5,8 @@ Template.groupesList.helpers({
 });
 
 
-
 Template.groupesList.helpers({
     totalGroupe: function () {
-    	return Groupes.find().count();
-	}
+        return Groupes.find().count();
+    }
 });
