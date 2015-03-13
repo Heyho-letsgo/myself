@@ -1,6 +1,0 @@
-if (Groupes.find().count() === 0)
-{
-	Groupes.insert({raisonSociale: 'Immo01'});
-	Groupes.insert({raisonSociale: 'Immo02'});
-	Groupes.insert({raisonSociale: 'Immo03', adresse: '25 rue Belliard'});
-}

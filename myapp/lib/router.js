@@ -2,7 +2,7 @@
  * Created by andrew on 30/01/15.
  */
 Router.configure({
-    layoutTemplate: 'layout'
+    layoutTemplate: 'layout',
 });
 
 
