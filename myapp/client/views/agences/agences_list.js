@@ -33,10 +33,7 @@ Template.agencesList.helpers({
 
 
 Template.agencesList.events({
-    'click .deleteItem': function () {
-        Agences.remove(this._id);
-        Router.go('agencesList');
-    },
+
   'click .archiveItem' : function () {
         Agences.update(this._id, {$set: {archive: true}});
        }
