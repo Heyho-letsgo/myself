@@ -30,6 +30,7 @@ Template.agencesListArchive.events({
         Router.go('agencesList');
     },
   'click .archiveItem' : function () {
-        Agences.update(this._id, {$set: {archive: true}});
+        Agences.update(this._id, {$set: {archive: false}});
+    Router.go('agencesList');
        }
   });
