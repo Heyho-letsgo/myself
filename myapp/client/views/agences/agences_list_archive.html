@@ -18,7 +18,7 @@
             {{#each archives}}
                 <li>  Nom du groupe : {{groupeRaisonSociale}} // id du groupe : {{groupeId}}//  id agence : {{_id}}// {{raisonSocialeAgence}}
                     {{type}}
-                  <b>{{archive}}</b>
+                  <b>{{archive}}</b>cds
                     {{# if adresse}}
                         {{adresse}}
                     {{else}}
@@ -31,7 +31,7 @@
                         {{ username }}
                         <a href="{{pathFor 'agenceItem'}}">Item</a>
                   <button class="deleteItem btn btn-warning" id="deleteItem">Delete</button>
-                  <button class="archiveItem btn btn-warning" id="archiveItem">Archive</button>
+                  <button class="archiveItem btn btn-warning" id="archiveItem">Désachiver</button>
 
                     {{/if}}
                 </li>
