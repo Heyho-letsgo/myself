@@ -29,8 +29,6 @@ Template.agenceItem.events({
             groupeRaisonSociale: groupeName,
             agenceId : idAgence,
             raisonSocialeAgence : agenceName,
-
-
             dateCreation: new Date(),
             //Je crée un champ temporaire et lui affecte une valeur --> à transformer en valeur random
             utilisateurNew: randomId

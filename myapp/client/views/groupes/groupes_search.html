@@ -2,33 +2,15 @@
 
     <div class="container">
         <h4>Recherche de groupe</h4>
-
-
         <form>
-
             <select name="raisonSociale" id="searchRaisonSociale" type="text" class="form-control">
                     {{#each groupesNames}}
                         <option> {{raisonSociale}} </option>
                     {{/each}}
             </select>
            <input name="ville" id="searchVille" type="text" class= "form-control" value="" placeholder=" Ville du groupe"/>
-
-
-            <button type="submit"  id="searchButton" >Rechecher</button>
-
-
-
-
+           <button type="submit"  id="searchButton" >Rechecher</button>
         </form>
-
-
-
-
-
-
-
-
-
         <div class="container">
         <h2>Résultat de recherche:</h2>
 {{# if searchResult}}

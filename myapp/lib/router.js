@@ -2,13 +2,12 @@
  * Created by andrew on 30/01/15.
  */
 Router.configure({
-    layoutTemplate: 'mainLayout'
+    layoutTemplate: 'layout'
 });
 
 
 Router.map(function(){
     this.route('accueil', {path: '/'});
-    this.route('mainPage', {path: '/mainPage'});
     this.route('googlePlaces', {path: '/places'});
 
 

@@ -11,6 +11,4 @@ twbs:bootstrap
 ian:accounts-ui-bootstrap-3
 underscore
 dburles:google-maps
-tomi:upload-server
-tomi:upload-jquery
 pauldowman:dotenv

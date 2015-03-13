@@ -29,8 +29,8 @@ Template.agencesListArchive.events({
         Agences.remove(this._id);
         Router.go('agencesList');
     },
-  'click .archiveItem' : function () {
+  'click .desArchiveItem' : function () {
         Agences.update(this._id, {$set: {archive: false}});
-    Router.go('agencesList');
+    //  Router.go('agencesList');
        }
   });

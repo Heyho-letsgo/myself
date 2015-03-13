@@ -1,4 +1,4 @@
-
+/*
 Meteor.startup(function () {
     UploadServer.init({
         tmpDir: process.env.PWD + '/.uploads/tmp',
@@ -8,3 +8,4 @@ Meteor.startup(function () {
 
     })
 });
+*/

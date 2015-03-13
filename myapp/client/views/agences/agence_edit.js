@@ -13,6 +13,7 @@ Template.agenceEdit.events({
             type: $(e.target).find('[name=type]').val(),
             adresse: $(e.target).find('[name=adresse]').val(),
             agenceNew: 0,
+            archive : false,
             dateModification: new Date()
 
         };

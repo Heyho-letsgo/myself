@@ -1,5 +1,3 @@
-
-
 Session.set('resultat' , undefined);
 
 Template.groupesSearch.events({
@@ -18,19 +16,13 @@ Template.groupesSearch.events({
 //alert([agencesSearch.raisonSocialeAgence] + [agencesSearch.ville])
 
     }
-
-
-
 });
-
 //////////////////////////////////////////////////
-
 Template.groupesSearch.helpers({
 
     searchResult:function(){
-
         var search = Session.get('resultat'); // Récupere les valeurs entrées dans le formulaire par la session
-        alert("Je recherche " + [search.raisonSociale]);
+        //alert("Je recherche " + [search.raisonSociale]);
         var groupesFind =
                 Groupes.find(
                     {raisonSociale:String(search.raisonSociale)},
@@ -39,11 +31,9 @@ Template.groupesSearch.helpers({
                 );
         return groupesFind ;
     },
-
     groupesNames: function (){
         return Groupes.find({}, {'raisonSociale':1, _id:0});
     },
-
 // fonction pour créer une nouvelle agence
     agenceNew:function(){
         var search = Session.get('resultat'); // Récupere les valeurs entrées dans le formulaire par la session
@@ -54,5 +44,4 @@ Template.groupesSearch.helpers({
                 //{type:String(search.type)}
         return groupesFind ;
     }
-
 });
