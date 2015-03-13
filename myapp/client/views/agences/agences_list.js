@@ -8,18 +8,26 @@ Template.agencesList.helpers({
     agencesTotalParUttilisateur: function () {
         return Agences.find(
             {
-                userId: { $in : [Meteor.user()]}}
+                userId: { $in : [Meteor.user()]},
+              'archive' : false
+            }
         ).count();
     },
     agencesTotal: function () {
-        return Agences.find().count();
+        return Agences.find(
+                    {
+                userId: { $in : [Meteor.user()]},
+              'archive' : false
+            }
+        ).count();
     },
     username: function () {
         return Meteor.user() && Meteor.user()._id;
     },
     agencesParUtilisateur: function () {
         return Agences.find({
-            userId: { $in : [Meteor.user()]}});
+            userId: { $in : [Meteor.user()]},
+            'archive' : false });
     }
   });
 
