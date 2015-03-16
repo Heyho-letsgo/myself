@@ -3,6 +3,16 @@
  */
 Router.configure({
     layoutTemplate: 'layout',
+     loadingTemplate: 'loading',
+     notFoundTemplate: 'notFound',
+      waitOn: function() { 
+           Meteor.subscribe('groupes');
+           Meteor.subscribe('agences');
+           Meteor.subscribe('utilisateurs');
+           return;
+         
+      }
+
 });
 
 
