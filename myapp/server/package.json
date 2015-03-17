@@ -1,0 +1,9 @@
+{
+  "name": "myapp",
+  "scripts": {
+    "start": "meteor --settings settings.json"
+  },
+    "description":"",
+    "version":"0.0.1",
+    "private":true
+} 
