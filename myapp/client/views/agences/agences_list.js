@@ -1,3 +1,5 @@
+document.title = "Liste des agences";
+
 Template.agencesList.helpers({
     agences: function () {
         return Agences.find({},
@@ -21,6 +23,16 @@ Template.agencesList.helpers({
             }
         ).count();
     },
+
+    /*agencesTotalNonArchive: function () {
+       var zob =  Agences.find(
+            {
+                userId: {$in: [Meteor.user()]},
+                'archive': false
+            }
+        ).count();
+
+    },*/
     username: function () {
         return Meteor.user() && Meteor.user()._id;
     },
