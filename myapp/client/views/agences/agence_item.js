@@ -1,6 +1,22 @@
 /**
  * Created by andrew on 09/02/15.
  */
+
+
+
+/**
+Template.agencesItem.helpers({
+    nameAgences: function () {
+        return Agences.findOne(this._id)
+        }
+});
+**/
+
+
+
+
+
+
 Template.agenceItem.events({
     'click .deleteItem': function () {
         Agences.remove(this._id);
