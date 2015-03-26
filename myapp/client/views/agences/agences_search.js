@@ -45,7 +45,6 @@ Template.agencesSearch.helpers({
                     //{type:String(search.type)}
                 ]
             }); // Requete db
-
         alert("Je recherche " + [search.agenceGroupe] + " et " + [search.raisonSocialeAgence] + " et " + [search.ville] + " et " + [search.type]);
         return agencesFind;
     },
@@ -62,12 +61,9 @@ Template.agencesSearch.helpers({
                         {ville: String(search.ville)},
                         {type: String(search.type)}
                     ]
-                })
-
-            ;
+                });
         alert("Je recherche " + [search.agenceGroupe] + " ou " + [search.raisonSocialeAgence] + " ou " + [search.ville] + " ou " + [search.type]);
         return agencesFind;
     }
-
 });
 
