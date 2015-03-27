@@ -8,8 +8,10 @@ Template.agenceEdit.events({
         var currentAgenceId = this._id;
         // Je récupère les valeurs saisies dans les champssci-dessous.
         var agenceProperties = {
-            raisonSocialeAgence: $(e.target).find('[name=raisonSocialeAgence]').val(),
-            ville: $(e.target).find('[name=ville]').val(),
+            raisonSocialeAgence: e.target.raisonSocialeAgence.value,
+            //raisonSocialeAgence: $(e.target).find('[name=raisonSocialeAgence]').val(),
+            ville: e.target.ville.value,
+            //ville: $(e.target).find('[name=ville]').val(),
             type: $(e.target).find('[name=type]').val(),
             adresse: $(e.target).find('[name=adresse]').val(),
             agenceNew: 0,
@@ -24,7 +26,7 @@ Template.agenceEdit.events({
                 // display the error to the user
                 alert(error.reason);
             } else {
-                Router.go('agenceItem', {_id: currentAgenceId});
+                Router.go('agencesList', {_id: currentAgenceId});
             }
         });
     }
