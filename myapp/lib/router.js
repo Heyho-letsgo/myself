@@ -18,7 +18,6 @@ Router.configure({
 
 Router.map(function () {
     this.route('accueil', {path: '/'});
-    this.route('googlePlaces', {path: '/places'});
 
 
     this.route('groupeItem', {

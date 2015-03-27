@@ -24,15 +24,37 @@ Template.agencesList.helpers({
         ).count();
     },
 
-    /*agencesTotalNonArchive: function () {
+    lienVersAgencesSearchSiEgalAUn: function () {
        var zob =  Agences.find(
             {
                 userId: {$in: [Meteor.user()]},
                 'archive': false
             }
         ).count();
+        if (zob >= 1){
+            return "Chercher  une agence !  ";
+        }
+    },
 
-    },*/
+    lienVersAccueil: function () {
+        var zob =  Agences.find(
+            {
+                userId: {$in: [Meteor.user()]},
+                'archive': false
+            }
+        ).count();
+        if(zob ===0){
+            return "Fuck";
+        }
+    },
+
+
+
+
+
+
+
+
     username: function () {
         return Meteor.user() && Meteor.user()._id;
     },

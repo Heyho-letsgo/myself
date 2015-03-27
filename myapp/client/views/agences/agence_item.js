@@ -5,11 +5,11 @@
 
 
 
-Template.agencesItem.helpers({
+/*Template.agencesItem.helpers({
     nameAgences: function () {
         return Agences.findOne(this._id);
         }
-});
+});*/
 
 
 
