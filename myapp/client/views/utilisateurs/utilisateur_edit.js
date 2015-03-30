@@ -5,7 +5,8 @@ Template.utilisateurEdit.events({
         var currentUtilisateurId = this._id;
         // Je récupère les valeurs saisies dans les champssci-dessous.
         var utilisateurProperties = {
-            nom: $(e.target).find('[name=nom]').val(),
+            nom: e.target.nom.value,
+            //nom: $(e.target).find('[name=nom]').val(),
             utilisateurNew: 0,
             dateModification: new Date()
 
