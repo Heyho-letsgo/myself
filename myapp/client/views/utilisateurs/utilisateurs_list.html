@@ -35,13 +35,13 @@
 	{{/if}}
 </Template>
 
-<Template name="utilisateursList2">
+<Template name="utilisateursListPourRassemblement">
     {{#if currentUser}}
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">UtilisateursList2</div>
+                        <div class="panel-heading">utilisateursListPourRassemblement</div>
                         <div class="panel-body">
                             <ul>
                                 {{#each utilisateurs}}
@@ -66,27 +66,3 @@
 
 
 
-
-<Template name="utilisateursListPourRassemblement">
-    {{#if currentUser}}
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Liste des Utilisateurs.</div>
-                        <div class="panel-body">
-                            <ul>
-                                {{#each utilisateurs}}
-                                    <li> {{currentUser.username}} {{ groupeId}} {{ agenceId}}
-                                        {{userId}}
-                                        {{nom}}</li>
-                                {{/each}}
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    {{/if}}
-</Template>

@@ -11,7 +11,7 @@ Template.utilisateursListSimple.helpers({
     }
 });
 
-Template.utilisateursList2.helpers({
+Template.utilisateursListPourRassemblement.helpers({
     utilisateurs: function () {
         return Utilisateurs.find();
     }
