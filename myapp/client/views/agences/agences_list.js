@@ -15,6 +15,7 @@ Template.agencesList.helpers({
             }
         ).count();
     },
+
     agencesTotal: function () {
         return Agences.find(
             {

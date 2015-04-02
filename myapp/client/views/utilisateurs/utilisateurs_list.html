@@ -1,16 +1,55 @@
 <Template name="utilisateursList">
-    {{#if currentUser}}
-        <div class="container">
+	{{#if currentUser}}
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">UtilisateursList.</div>
                         <div class="panel-body">
                             <ul>
-                                {{#each utilisateurs}}
+								{{#each utilisateurs}}
                                     <li> {{currentUser.username}} {{ groupeId}} {{ agenceId}}
-                                        {{userId}}
-                                        {{nom}}</li>
+										{{userId}}
+										{{nom}}</li>
+								{{/each}}
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	{{/if}}
+</Template>
+
+
+<Template name="utilisateursListSimple">
+	{{#if currentUser}}
+        <ul>
+			{{#each utilisateurs}}
+                <li> {{ groupeRaisonSociale}}
+                    <a href="{{pathFor 'utilisateurItem'}}">{{nom}}</a></li>
+			{{/each}}
+        </ul>
+
+	{{/if}}
+</Template>
+
+<Template name="utilisateursListPourRassemblement">
+    {{#if currentUser}}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">utilisateursListPourRassemblement</div>
+                        <div class="panel-body">
+                            <ul>
+                                {{#each utilisateurs}}
+                                    <li> currentUser.username : {{currentUser.username}}<br>
+                                        groupeId : {{ groupeId}}<br>
+                                        agenceId : {{ agenceId}}<br>
+                                        userId : {{_id}}<br>
+                                        nom : {{nom}}</li>
                                 {{/each}}
                             </ul>
 
@@ -20,18 +59,10 @@
             </div>
         </div>
     {{/if}}
-
 </Template>
 
 
-<Template name="utilisateursListSimple">
-    {{#if currentUser}}
-        <ul>
-            {{#each utilisateurs}}
-                <li> {{ groupeRaisonSociale}}
-                    <a href="{{pathFor 'utilisateurItem'}}">{{nom}}</a></li>
-            {{/each}}
-        </ul>
 
-    {{/if}}
-</Template>
+
+
+

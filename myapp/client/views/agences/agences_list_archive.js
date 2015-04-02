@@ -5,10 +5,11 @@ Template.agencesListArchive.helpers({
                 sort: {raisonSocialeAgence: -1}, limit: 5
             });
     },
-    agencesTotalParUttilisateur: function () {
+    agencesTotalArchiveParUttilisateur: function () {
         return Agences.find(
             {
-                userId: {$in: [Meteor.user()]}
+                userId: {$in: [Meteor.user()]},
+                'archive' : true
             }
         ).count();
     },

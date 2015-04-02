@@ -2,31 +2,20 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                {{> groupesList}}
-
+				{{> groupesList}}
             </div>
             <div class="col-md-3">
-
-                {{> agencesList}}
-
+				{{> agencesList}}
             </div>
             <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Liste des utilisateurs.</div>
-                    <div class="panel-body">
-                        {{#markdown}}I am using __markdown__.{{/markdown}}
-                        {{> utilisateursListSimple}}
-                    </div>
-                </div>
+				{{> utilisateursListPourRassemblement}}
             </div>
             <div class="col-md-3">
-
-                {{#if currentUser }}
-                    {{> agencesListArchive}}
-                {{ else}}
+				{{#if currentUser }}
+					{{> agencesListArchive}}
+				{{ else}}
                     Non connecté
-                {{/if }}
-
+				{{/if }}
             </div>
         </div>
     </div>
