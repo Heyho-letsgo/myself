@@ -1,12 +1,6 @@
 <component name="libraryTable">
-  <library name="selectpicker" type="javaScript">
-    <properties>
-      <option name="frameworkName" value="jQuery" />
-    </properties>
+  <library name="selectpicker">
     <CLASSES />
-    <DOCUMENTATION>
-      <root url="http://silviomoreto.github.io/bootstrap-select/javascripts/bootstrap-select.js" />
-    </DOCUMENTATION>
     <SOURCES />
   </library>
 </component>
