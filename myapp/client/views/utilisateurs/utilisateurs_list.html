@@ -49,7 +49,8 @@
                                         groupeId : {{ groupeId}}<br>
                                         agenceId : {{ agenceId}}<br>
                                         userId : {{_id}}<br>
-                                        nom : {{nom}}</li>
+                                        nom : <a href="{{pathFor 'utilisateurItem'}}">{{nom}}</a>
+                                    </li>
                                 {{/each}}
                             </ul>
 
