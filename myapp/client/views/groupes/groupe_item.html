@@ -1,11 +1,21 @@
 <Template name="groupeItem">
     <div class="container-fluid">
-        <h2>Show groupe</h2>
-        {{ raisonSociale }} / {{adresse}} // {{_id}}<br>
-        <a href="{{pathFor 'groupeEdit'}}" class="btn btn-info" value="Update">Editer</a>
-        <a href="{{pathFor 'groupesList'}}" class="btn btn-info">Liste des Groupes</a>
-        <button class="delete btn btn-danger">Supprimer ce groupe</button>
-        <button class="addAgence btn btn-primary" name="ajoutAgence" id="button">Ajouter une agence à ce groupe</button>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Show groupe</div>
+                    <div class="panel-body">
+						{{ raisonSociale }} / {{adresse}} // {{_id}}<br>
+                        <a href="{{pathFor 'groupeEdit'}}" class="btn btn-info" value="Update">Editer</a>
+                        <a href="{{pathFor 'groupesList'}}" class="btn btn-info">Liste des Groupes</a>
+                        <button class="delete btn btn-danger">Supprimer ce groupe</button>
+                        <button class="addAgence btn btn-primary" name="ajoutAgence" id="button">Ajouter une agence à ce
+                            groupe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </Template>
