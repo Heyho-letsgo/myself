@@ -5,7 +5,9 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Show groupe</div>
                     <div class="panel-body">
-						{{ raisonSociale }} / {{adresse}} // {{_id}}<br>
+						<p>{{ raisonSociale }}</p>
+                        <p>{{adresse}}</p>
+                        <p>{{_id}}</p>
                         <a href="{{pathFor 'groupeEdit'}}" class="btn btn-info" value="Update">Editer</a>
                         <a href="{{pathFor 'groupesList'}}" class="btn btn-info">Liste des Groupes</a>
                         <button class="delete btn btn-danger">Supprimer ce groupe</button>
