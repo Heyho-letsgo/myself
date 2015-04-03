@@ -1,5 +1,0 @@
-{ "ville" : "Lyon", "type" : "agence", "raisonSocialeAgence" : "Agence01", "_id" : "2LPE9FNSQ2Xn2kCAd" }
-{ "ville" : "Paris", "type" : "agence", "raisonSocialeAgence" : "Agence02", "_id" : "Qp6BRoFxoDn2X48Fb" }
-{ "ville" : "Paris", "type" : "agence", "raisonSocialeAgence" : "Agence03", "adresse" : "48 rue des Moines", "_id" : "cef2XPEmeHPxjSevo" }
-{ "_id" : "r88YmQWFSHfXiSWS3", "agenceNew" : 0, "archive" : false, "dateCreation" : { "$date" : 1427108720391 }, "dateModification" : { "$date" : 1427108728269 }, "groupeId" : "RviESPM6QQNuBjyxa", "groupeRaisonSociale" : "GroupeImmo01", "raisonSocialeAgence" : "Agence01", "type" : "Eurl", "userId" : { "_id" : "dz56NjwqJ2woWavW3", "profile" : {}, "username" : "andy00" }, "ville" : "" }
-{ "type" : "Sarl.", "raisonSocialeAgence" : "Agence00", "numrue" : "2", "voie" : "rue", "adresse" : "des Moines", "cp" : "75017", "ville" : "Paris", "tel" : "0142558816", "mail" : "agence00@exemple.com", "_id" : "rBLB9SrJwQsWm3qip" }
