@@ -1,33 +1,31 @@
 <Template name="groupesList">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
+
                 <div class="panel panel-default">
                     <div class="panel-heading">Liste des groupes</div>
                     <div class="panel-body">
 
-                        {{# if currentUser}}
+						{{# if currentUser}}
                             <a href="{{pathFor 'groupeNew'}}">Nouveau groupe</a>
-                            {{# if totalGroupe ">0" }}
+							{{# if totalGroupe ">0" }}
                                 <a href="{{pathFor 'groupesSearch'}}">Chercher groupes</a>
-                            {{/if}}
-                        {{/if}}
-                        {{# if totalGroupe 1  }}
+							{{/if}}
+						{{/if}}
+						{{# if totalGroupe 1  }}
                             <h3>Il y a {{totalGroupe}} groupe.</h3>
-                        {{else }}
+						{{else }}
                             <h3>Il y a {{totalGroupe}} groupes.</h3>
-                        {{/if}}
-                        <ul>
-                            {{#each groupes}}
-                                <li>{{ raisonSociale}}   // <a href="{{pathFor 'groupeItem'}}">Show</a> <a
+						{{/if}}
+                        <ul class="list-group" >
+							{{#each groupes}}
+                                <li class="list-group-item"> {{ raisonSociale}}   // <a href="{{pathFor 'groupeItem'}}">Show</a> <a
                                         href="{{pathFor 'groupeItem'}}">Créer une agence pour ce groupe.</a></li>
-                            {{/each}}
+							{{/each}}
                         </ul>
-
                     </div>
                 </div>
+
             </div>
-        </div>
-    </div>
+
 </Template>
 
