@@ -10,7 +10,6 @@ accounts-password
 twbs:bootstrap
 ian:accounts-ui-bootstrap-3
 underscore
-dburles:google-maps
 pauldowman:dotenv
 sacha:spin
 markdown

@@ -2,28 +2,38 @@
     <div class="container">
         <h2>Accueil</h2>
         <img alt="Brand" src="/logos/speed2.jpg" class="img-responsive">
-        {{# if currentUser}}
+		{{# if currentUser}}
             Nom : {{username}}
-        {{/if}}
-      
-           <div role="tabpanel">
+		{{/if}}
+
+        <div role="tabpanel">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                          data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                           data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+                </li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
+                </li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home"><p>The explosion of the dimension believes.</p>   <div class="container">
-                    <img src="/developpers/abl.jpeg"  alt="img dd" class="img-rounded" />
-                    <h4>André Baudin-Laurencin</h4>
-                </div></div>
+                <div role="tabpanel" class="tab-pane active" id="home"><p>The explosion of the dimension believes.</p>
+
+                    <div class="container">
+                        <img src="/developpers/abl.jpeg" alt="img dd" class="img-rounded"/>
+                        <h4>André Baudin-Laurencin</h4>
+                    </div>
+                </div>
                 <div role="tabpanel" class="tab-pane fade" id="profile"><p>Texte pour Profile</p></div>
-                <div role="tabpanel" class="tab-pane fade" id="messages"><p>Modification, x-ray vision, and definition?Density doesn’t essentially visualize any spirit — but the monkey is what disturbs.</p></div>
-                <div role="tabpanel" class="tab-pane fade" id="settings"><p>The saint has energy, but not everyone invents it.</p></div>
+                <div role="tabpanel" class="tab-pane fade" id="messages"><p>Modification, x-ray vision, and
+                    definition?Density doesn’t essentially visualize any spirit — but the monkey is what disturbs.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="settings"><p>The saint has energy, but not everyone
+                    invents it.</p></div>
             </div>
 
         </div>
@@ -34,11 +44,5 @@
 
 
 
-
-
-
-
-
-
-  </div>
+    </div>
 </template>

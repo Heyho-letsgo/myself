@@ -13,7 +13,9 @@
                             <p>{{ cp }}</p>
                             <p>{{ ville }}</p>
                             <p>{{ tel }}</p>
-                            <p>{{ mail }}</p>
+                            <p>
+                                <a href="mailto:{{ mail }}">"{{ mail }}"</a>
+                                </p>
                             <p>{{_id}}</p>
                             <a href="{{pathFor 'groupeEdit'}}" class="btn btn-info" value="Update" data-toggle="tooltip"
                                data-placement="bottom" title="Editer ce groupe">

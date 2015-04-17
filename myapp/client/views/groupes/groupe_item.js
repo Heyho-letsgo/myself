@@ -1,6 +1,6 @@
 Template.groupeItem.events({
-    'click .delete': function () {
-        Groupes.remove(this._id);
+    'click .archive': function () {
+        Groupes.update(this._id, {$set: {archive: true}});
         Router.go('groupesList');
     }
 
