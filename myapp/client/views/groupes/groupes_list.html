@@ -18,8 +18,13 @@
 						{{/if}}
                         <ul class="list-group" >
 							{{#each groupes}}
-                                <li class="list-group-item"> {{ raisonSociale}}   // <a href="{{pathFor 'groupeItem'}}">Show</a> <a
-                                        href="{{pathFor 'agenceEdit'}}">Créer une agence pour ce groupe.</a></li>
+                                <li class="list-group-item"> {{ raisonSociale}}   // <a href="{{pathFor 'groupeItem'}}">Show</a>
+                                    <button class="addAgence btn btn-primary" data-toggle="tooltip"
+                                            data-placement="bottom" title="Ajouter une agence ce groupe" name="ajoutAgence" id="button">
+                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    </button>
+
+                                </li>
 							{{/each}}
                         </ul>
                     </div>
