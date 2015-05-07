@@ -6,13 +6,33 @@
                                 Nom de l'utilisateur : {{nom}}<br>
                                 Date de création: {{dateCreation}} <br>
                                 Date de modification : {{dateModification}}<br>
-                                _id : {{_id}}
-                                
-
-        
+                                _id : {{_id}}<br>
+                                    
+  <h3>Uploads Section</h3>
+    <p>
+        Add Files
+        <span class="btn btn-default btn-file">
+        <input multiple class="file fileInput" type="file" />
+        </span>
+    </p>
     </div>
-
-
+    <div class="container">
+      liste des uploads
+  
+    </div>
+      <div class="container" id="container1">
+    <div class="row">
+        <div class="col-md-12">
+                  {{#each uploads}}
+        <img src="{{ url }}" class="img-responsive img-rounded" alt="{{name}} {{updatedAt}} {{size}} {{type}}" height="40" width="40">
+            {{name}}
+            {{updatedAt}}
+            {{size}}
+            {{type}}
+                          
+        {{/each}}
+        </div>
+        </div>
+    </div>
 </template>
-
 

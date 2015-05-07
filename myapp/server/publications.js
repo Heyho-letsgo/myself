@@ -13,3 +13,9 @@ Meteor.publish('utilisateurs', function () {
 
     return Utilisateurs.find();
 });
+
+
+
+Meteor.publish("uploads", function () {
+      return Uploads.find();
+});

@@ -14,3 +14,5 @@ markdown
 fourseven:scss
 reywood:bootstrap3-sass
 ian:accounts-ui-bootstrap-3
+cfs:standard-packages
+cfs:filesystem
