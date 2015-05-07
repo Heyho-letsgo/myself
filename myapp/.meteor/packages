@@ -7,9 +7,10 @@
 meteor-platform
 iron:router
 accounts-password
-twbs:bootstrap
-ian:accounts-ui-bootstrap-3
 underscore
 pauldowman:dotenv
 sacha:spin
 markdown
+fourseven:scss
+reywood:bootstrap3-sass
+ian:accounts-ui-bootstrap-3
