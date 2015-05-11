@@ -1,5 +1,4 @@
 
-Meteor.subscribe('uploads');
 
 Template.utilisateurItem.helpers({
     utilisateurItem: function () {
